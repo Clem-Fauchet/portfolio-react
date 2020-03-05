@@ -1,122 +1,136 @@
-.letter {
-  width: 972px;
-  height: 472px;
-  margin: 13% auto;
-  background: $dark-color-main;
-  border: 5px solid #ffffff;
-  box-shadow: 0px 4px 4px rgba(34,41,43,.26);
-  border-radius: 54px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
+.container {
+  width: 100vw;
+  min-height: 100vh;
 
-  .cover {
-    opacity: 1;
-    position: absolute;
-    background: $dark-color-secondary;
+  .letter {
+    width: 972px;
+    height: 472px;
+    margin: 6.5% auto;
+    background: $dark-color-main;
+    border: 5px solid #ffffff;
+    box-shadow: 0px 4px 4px rgba(34,41,43,.26);
     border-radius: 54px;
-    box-shadow: 0px 6px 6px rgba(34,41,43,.26);
-    width: 100%;
-    height: 76%;
-    clip-path: polygon(100% 0, 100% 30%, 50.5% 100%, 49.5% 100%, 0 30%, 0 0);
-  }
-
-  h1 {
-    font-family: $font;
-    font-weight: map-get($font-weight, 'bold');
-    font-size: 55px;
-    top: 61px;
-    color: $common-color;
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    text-shadow: 0px 3px 4px #83551D;
-  }
-
-  h3, label, svg {
-    opacity: 0;
-  }
-}
-
-.letter.open {
-  height: 698px;
-  top: 186px;
-  margin: 6.5% auto;
-  transform: opacity 0.5s ease, height 0.6s ease;
-
-  .cover {
-    opacity:0;
-  }
-
-  h1 {
-    opacity: 1;
-    font-family: $font;
-    font-weight: map-get($font-weight, 'bold');
-    font-size: 55px;
-    top: 61px;
-    color: $common-color;
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    text-shadow: 0px 3px 4px #83551D;
-
-  }
-
-  h3 {
-    opacity: 1;
-    color: $dark-color-text;
-    font-family: $font;
-    font-weight: map-get($font-weight, 'semi-bold'); 
-    font-size: 48px;
-  }
-
-  label {
-    opacity: 1;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 15%;
-
-    input[type='text'] {
-      background-color: #C2D0D3;
-      border: 1px solid #ffffff;
-      border-radius: 35px;
-      height: 70px;
-      width: 75%;
-      padding: 5px 30px;
-      outline: none;
-      font-size: 25px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  
+    .cover {
+      opacity: 1;
+      background: $dark-color-secondary;
+      border-radius: 54px;
+      box-shadow: 0px 6px 6px rgba(34,41,43,.26);
+      width: 100%;
+      height: 76%;
+      clip-path: polygon(100% 0, 100% 30%, 50.5% 100%, 49.5% 100%, 0 30%, 0 0);
+    }
+  
+    h1 {
       font-family: $font;
       font-weight: map-get($font-weight, 'bold');
-      color: $dark-color-main;
-      caret-color: $dark-color-main;
+      font-size: 55px;
+      top: 61px;
+      color: $common-color;
       text-align: center;
-      cursor: pointer;
-
-      &:focus {
+      position: absolute;
+      width: 100%;
+      text-shadow: 0px 3px 4px #83551D;
+    }
+  
+    h3, label, svg {
+      opacity: 0;
+    }
+  }
+  
+  .letter.open {
+    height: 650px;
+    margin: 6.5% auto;
+    transition: height 1s ease;
+  
+    .cover {
+      position: absolute;
+      opacity:0;
+      transition: opacity 0.9s ease;
+    }
+  
+    h1 {
+      opacity: 1;
+      font-family: $font;
+      font-weight: map-get($font-weight, 'bold');
+      font-size: 55px;
+      top: 61px;
+      color: $common-color;
+      text-align: center;
+      position: absolute;
+      width: 100%;
+      text-shadow: 0px 3px 4px #83551D;
+      transition: opacity 0.9s ease;
+  
+    }
+  
+    h3 {
+      opacity: 1;
+      color: $dark-color-text;
+      font-family: $font;
+      font-weight: map-get($font-weight, 'semi-bold'); 
+      font-size: 48px;
+      margin: auto;
+      transition: opacity 0.9s ease;
+    }
+  
+    label {
+      opacity: 1;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 15%;
+      transition: opacity 0.9s ease;
+      
+      input[type='text'] {
+        background-color: #C2D0D3;
+        border: 1px solid #ffffff;
+        border-radius: 35px;
+        height: 70px;
+        width: 75%;
+        padding: 5px 30px;
         outline: none;
-        box-shadow: inset 0 0px 4px 0px $dark-color-main;
-      }
-
-      &::placeholder {
         font-size: 25px;
         font-family: $font;
         font-weight: map-get($font-weight, 'bold');
         color: $dark-color-main;
-        opacity: 0.25;
-        vertical-align: middle;
+        caret-color: $dark-color-main;
         text-align: center;
+        cursor: pointer;
+        
+  
+        &:focus {
+          outline: none;
+          box-shadow: inset 0 0px 4px 0px $dark-color-main;
+        
+        }
+  
+        &::placeholder {
+          font-size: 25px;
+          font-family: $font;
+          font-weight: map-get($font-weight, 'bold');
+          color: $dark-color-main;
+          opacity: 0.25;
+          vertical-align: middle;
+          text-align: center;
+        }
       }
     }
-  }
-
-  svg {
-    opacity: 1;
-    position: absolute;
-    bottom: 7%;
-    right: 5%;
-    cursor: pointer;
-    stroke: none;
-    fill: $common-color;
-  }
   
+    svg {
+      opacity: 1;
+      position: absolute;
+      bottom: 7%;
+      right: 5%;
+      cursor: pointer;
+      stroke: none;
+      fill: $common-color;
+    }
+    
+  }
 }
+

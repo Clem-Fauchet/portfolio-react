@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function PopUp() {
+  const [isOpen, setIsOpen] = useState(false)
+
+  const openingLetter = () => {
+    setTimeout(() => {
+      setIsOpen(true)
+    }, 2500)
+  }
+
   return (
-    <>
-      <div className='letter'>
+    <div class='container' onMouseMove={openingLetter}>
+      <div className={`letter ${isOpen ? 'open' : ''}`}>
         <span className='cover'></span>
         <h1>Welcome to Hogwarts</h1>
         <h3>Who are you?</h3>
@@ -14,7 +22,7 @@ function PopUp() {
           <path d='M0 0 L15 15 L0 30'></path>
         </svg>
       </div>
-    </>
+    </div>
   )
 }
 
