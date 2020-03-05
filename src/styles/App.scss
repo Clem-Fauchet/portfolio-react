@@ -1,3 +1,9 @@
 @import 'settings';
 @import 'color-themes';
+@import 'popUp';
 
+.App {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+}

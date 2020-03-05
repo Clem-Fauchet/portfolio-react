@@ -1,0 +1,57 @@
+//shortcuts
+$bg: 'bg';
+$bg-second: 'bg-second';
+$bg-third: 'bg-third';
+$text:'text';
+$nav-border: 'nav-border';
+$bg-user: 'bg-user';
+$shadow-bloc: 'shadow-bloc';
+$shadow-card: 'shadow-card';
+$shadow-book: 'shadow-book';
+
+//themes
+$themes: (
+
+  default: (
+        bg: $dark-color-main,
+        bg-second: $dark-color-secondary,
+        bg-third: $dark-color-third,
+        text: $dark-color-text,
+        nav-border: $dark-nav-border,
+        bg-user: $dark-background-user,
+        shadow-bloc: $dark-shadow-bloc,
+        shadow-card: $dark-shadow-card,
+        shadow-book: $light-shadow-book,
+    ),
+
+  light: (
+    bg: $light-color-main,
+    bg-second: $light-color-secondary,
+    bg-third: $light-color-third,
+    text: $light-color-text,
+    nav-border: $light-nav-border,
+    bg-user: $light-background-user,
+    shadow-bloc: $light-shadow-bloc,
+    shadow-card: $light-shadow-card,
+    shadow-book: $light-shadow-book,
+
+  )
+);
+
+@mixin themed() {
+  @each $theme, $map in $themes {
+    .themes-#{$themes} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), '#{$key}');
+        $theme-map: map-merge($theme-map, ($key: $value)) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function t($key) {
+  @return map-get($theme-map, $key);
+}
