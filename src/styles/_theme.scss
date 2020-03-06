@@ -1,0 +1,22 @@
+.mode {
+  position: absolute;
+  top: 0px;
+  right: 12%;
+  z-index: 999;
+  height: $nav-height;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .icon {
+    width: 28px;
+    height: 28px;
+    opacity: .75;
+    cursor: pointer;
+  
+  @include themed() {
+    fill: t($theme);
+  }
+  }
+}

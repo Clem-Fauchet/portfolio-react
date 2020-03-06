@@ -3,9 +3,14 @@ $bg: 'bg';
 $bg-second: 'bg-second';
 $bg-second-opacity: 'bg-second-opacity';
 $bg-third: 'bg-third';
+$bg-input: 'bg-input';
+$input-color: 'input-color';
+$shadow-popup: 'shadow-popup';
 $text:'text';
 $nav-border: 'nav-border';
+$theme: 'theme';
 $bg-user: 'bg-user';
+$shadow-user: 'shadow-user';
 $shadow-bloc: 'shadow-bloc';
 $shadow-card: 'shadow-card';
 $shadow-book: 'shadow-book';
@@ -18,9 +23,14 @@ $themes: (
         bg-second: $dark-color-secondary,
         bg-second-opacity: $dark-color-secondary-opacity,
         bg-third: $dark-color-third,
+        bg-input: $dark-input-background,
+        input-color: $light-color-text,
+        shadow-popup: $dark-shadow-popup,
         text: $dark-color-text,
         nav-border: $dark-nav-border,
+        theme: $color-user,
         bg-user: $dark-background-user,
+        shadow-user: $dark-shadow-user,
         shadow-bloc: $dark-shadow-bloc,
         shadow-card: $dark-shadow-card,
         shadow-book: $dark-shadow-book,
@@ -31,9 +41,14 @@ $themes: (
     bg-second: $light-color-secondary,
     bg-second-opacity: $light-color-secondary-opacity,
     bg-third: $light-color-third,
+    bg-input: $light-input-background,
+    input-color: $dark-color-text,
+    shadow-popup: $light-shadow-popup,
     text: $light-color-text,
     nav-border: $light-nav-border,
+    theme: $dark-color-secondary,
     bg-user: $light-background-user,
+    shadow-user: $light-shadow-user,
     shadow-bloc: $light-shadow-bloc,
     shadow-card: $light-shadow-card,
     shadow-book: $light-shadow-book,

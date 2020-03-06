@@ -1,12 +1,27 @@
-import React from 'react'
-
+import React, { useState } from 'react'
 import './styles/App.scss'
-// import PopUp from './components/PopUp/PopUp'
+
+import { FaSun } from 'react-icons/fa'
+import { IoIosMoon } from 'react-icons/io'
+import PopUp from './components/PopUp/PopUp'
 import CompleteLayout from './components/BasicLayout/CompleteLayout'
 
 function App() {
+  const [themeLight, setThemeLight] = useState(false)
+
+  const changingTheme = () => {
+    setThemeLight(!themeLight)
+  }
+
   return (
-    <div className='App theme--dark'>
+    <div className={`App ${themeLight ? 'theme--light' : 'theme--dark'}`}>
+      <div className='mode'>
+        {themeLight ? (
+          <IoIosMoon className='icon' onClick={changingTheme} />
+        ) : (
+          <FaSun className='icon' onClick={changingTheme} />
+        )}
+      </div>
       {/* <PopUp /> */}
       <CompleteLayout />
     </div>

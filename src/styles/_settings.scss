@@ -25,6 +25,7 @@ $dark-color-third: #262E30;
 $dark-color-text: #FFF;
 $dark-nav-border: 1px solid #171B1D;
 $dark-background-user: #171B1D;
+$dark-input-background: #C2D0D3;
 
 $light-color-main: #FFF;
 $light-color-secondary: #F3FDFF;
@@ -33,6 +34,7 @@ $light-color-third: #FAFAFA;
 $light-color-text: #22292B;
 $light-nav-border: 1px solid #F3FDFF;
 $light-background-user: #D8BDDD;
+$light-input-background:#303536;
 
 $border-opacity: 23%;
 $common-color: #FF9115;
@@ -42,18 +44,21 @@ $nav-radius: 10px 10px 45px 45px;
 $radius-user: 45px 0px 45px 45px;
 $button-radius: 12px;
 
-
+$nav-height: 100px;
 
 //shadows 
 $dark-shadow-bloc: 0px 4px 4px #1E1E1D;
 $dark-shadow-card: 0px 2px 2px #171B1D;
+$dark-shadow-popup: 0px 3px 4px #593913;
+$dark-shadow-user: inset 0px 1px 2px rgba(255,255,255,.25);
 
 
 $light-shadow-bloc: 0px 4px 4px rgba(30,30,29,.31);
 $light-shadow-card: 0px 2px 2px rgba(23,27,29,.31);
+$light-shadow-popup: 0px 3px 3px #E1A45A;
+$light-shadow-user: inset 0px 1px 2px rgba(33,31,31,.25);
 
 $shadow-button: 0px 1px 2px rgba(248,173,26,.26);
-$shadow-user: inset 0px 1px 2px rgba(255,255,255,.25);
 
 //shadow books
 $dark-shadow-book: 
