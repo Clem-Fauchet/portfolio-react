@@ -1,6 +1,7 @@
 //shortcuts
 $bg: 'bg';
 $bg-second: 'bg-second';
+$bg-second-opacity: 'bg-second-opacity';
 $bg-third: 'bg-third';
 $text:'text';
 $nav-border: 'nav-border';
@@ -15,6 +16,7 @@ $themes: (
   dark: (
         bg: $dark-color-main,
         bg-second: $dark-color-secondary,
+        bg-second-opacity: $dark-color-secondary-opacity,
         bg-third: $dark-color-third,
         text: $dark-color-text,
         nav-border: $dark-nav-border,
@@ -27,6 +29,7 @@ $themes: (
   light: (
     bg: $light-color-main,
     bg-second: $light-color-secondary,
+    bg-second-opacity: $light-color-secondary-opacity,
     bg-third: $light-color-third,
     text: $light-color-text,
     nav-border: $light-nav-border,

@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { UserContext } from '../PopUp/PopUp'
 
-import Wizard from '../../assets/font icons/wizard.svg'
+import { FaHatWizard } from 'react-icons/fa'
 
 function User() {
+  const username = useContext(UserContext)
+
   return (
     <div className='user'>
-      {/* <Wizard /> */}
-      <h3>username</h3>
+      <FaHatWizard color='#FF9115' size='32px' />
+      <h3>{username}</h3>
     </div>
   )
 }

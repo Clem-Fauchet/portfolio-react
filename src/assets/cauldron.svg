@@ -17,8 +17,8 @@
 	<path class="st1" d="M393.8,236.1H113.4c-4.4,0-8-3.6-8-8v-8c0-4.4,3.6-8,8-8h280.4c4.4,0,8,3.6,8,8v8
 		C401.8,232.5,398.2,236.1,393.8,236.1z"/>
 </g>
-<circle id="bulle1" class="st2" cx="270.3" cy="143.9" r="21.3"/>
-<circle id="bulle2" class="st2" cx="319" cy="65.3" r="16.8"/>
-<circle id="bulle3" class="st2" cx="172.6" cy="65.3" r="26.4"/>
-<circle id="bulle4" class="st2" cx="176.3" cy="161.7" r="14.1"/>
+<circle id="bulle1" class="st2" cx="270.3" cy="143.9" r="22"/>
+<circle id="bulle2" class="st2" cx="319" cy="65.3" r="16"/>
+<circle id="bulle3" class="st2" cx="172.6" cy="65.3" r="26"/>
+<circle id="bulle4" class="st2" cx="176.3" cy="161.7" r="14"/>
 </svg>

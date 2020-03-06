@@ -20,6 +20,7 @@ $font-weight: (
 //colors themes
 $dark-color-main: #22292B;
 $dark-color-secondary: #171B1D;
+$dark-color-secondary-opacity: rgba(23, 27, 29, 0.301);
 $dark-color-third: #262E30;
 $dark-color-text: #FFF;
 $dark-nav-border: 1px solid #171B1D;
@@ -27,6 +28,7 @@ $dark-background-user: #171B1D;
 
 $light-color-main: #FFF;
 $light-color-secondary: #F3FDFF;
+$light-color-secondary-opacity: rgba(243, 253, 255, 0.301);
 $light-color-third: #FAFAFA;
 $light-color-text: #22292B;
 $light-nav-border: 1px solid #F3FDFF;
@@ -45,10 +47,12 @@ $button-radius: 12px;
 $dark-shadow-bloc: 0px 4px 4px #1E1E1D;
 $dark-shadow-card: 0px 2px 2px #171B1D;
 
+
 $light-shadow-bloc: 0px 4px 4px rgba(30,30,29,.31);
 $light-shadow-card: 0px 2px 2px rgba(23,27,29,.31);
 
 $shadow-button: 0px 1px 2px rgba(248,173,26,.26);
+$shadow-user: inset 0px 1px 2px rgba(255,255,255,.25);
 
 //shadow books
 $dark-shadow-book: 
@@ -79,6 +83,7 @@ $dark-shadow-book:
 //text (for now changing in em)
 $size-nav: 23px;
 $size-word: 21px;
+$size-user: 13px;
 
 $size-web-title: 22px;
 $size-recipe-title: 18px;
@@ -89,6 +94,7 @@ $size-bubble-text: 17px;
 
 $size-bubble-button: 17px;
 $size-button: 15px;
+
 
 //breakpoints
 $screen-xs: 480px;
