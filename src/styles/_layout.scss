@@ -1,6 +1,7 @@
 .layout {
   width: 100vw;
   min-height: 100vh;
+  position: relative;
  
   @include themed() {
     background-color: t($bg);
@@ -65,3 +66,35 @@
     
   }
 }
+
+.footer, .icons {
+  width: 180px;
+  height: 100px;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  
+  @include themed() {
+    fill: t($bg-second);
+  }
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 8px 15px 30px;
+
+  .link {
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+
+    @include themed() {
+      fill: t($text);
+      
+    }
+    
+  }
+}
+

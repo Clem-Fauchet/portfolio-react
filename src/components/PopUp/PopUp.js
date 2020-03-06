@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import CompleteLayout from '../BasicLayout/CompleteLayout'
 
 export const UserContext = React.createContext()
@@ -8,6 +8,12 @@ function PopUp() {
   const [username, setUsername] = useState('')
 
   const [loadingLayout, setLoadingLayout] = useState(false)
+
+  const inputRef = useRef(null)
+
+  useEffect(() => {
+    inputRef.current.focus()
+  }, [])
 
   const openingLetter = () => {
     setTimeout(() => {
@@ -44,6 +50,8 @@ function PopUp() {
                 placeholder='username'
                 value={username}
                 onChange={handleUsername}
+                maxLength={15}
+                ref={inputRef}
               />
             </label>
           </form>
