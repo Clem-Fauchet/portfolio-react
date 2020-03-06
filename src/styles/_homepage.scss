@@ -1,0 +1,101 @@
+.info-box {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 40px;
+  box-shadow: $nav-shadow;
+  padding: 20px;
+  position: relative;
+
+  @include themed() {
+    background-color: t($bg-second);
+    border: t($nav-border);
+  }
+
+  h2 {
+    font-family: $font;
+    font-weight: map-get($font-weight, 'bold');
+    font-size: 50px;
+    color: $common-color;
+
+    @include themed() {
+      text-shadow: t($shadow-popup);
+     }
+  }
+
+  h3 {
+    font-family: $font-admin;
+    font-weight: map-get($font-weight, 'bold');
+    font-size: 32px;
+
+    @include themed() {
+      color: t($text);
+     }
+  }
+
+  p {
+    font-family: $font;
+    font-weight: map-get($font-weight, 'medium');
+    font-size: 29px;
+    text-align: center;
+    width: 83%;
+
+    @include themed() {
+      color: t($text);
+     }
+  }
+
+  h4 {
+    font-family: $font-admin;
+    font-weight: map-get($font-weight, 'medium');
+    color: $common-color;
+    font-size: 28px;
+  }
+
+
+  #Times {
+    width: 30px;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    
+    cursor: pointer;
+
+    .circle {
+      stroke-width: 8;
+      fill: none;
+      transform:scale(0.85);
+      transform-origin: center;
+
+      @include themed() {
+       stroke: t($text);
+     }
+
+     @keyframes Circle {
+       from {
+        transform:scale(0.85);
+        opacity:1;
+       }
+       to {
+         transform: scale(1);
+         opacity: 0.4;
+       } 
+     }
+
+     animation: Circle 0.6s 25 ease-out forwards 3.5s;
+     
+    }
+
+    .cross {
+      
+       @include themed() {
+        stroke: t($text);
+        fill: t($text);
+      }
+
+    }
+  }
+}

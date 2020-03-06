@@ -1,7 +1,7 @@
 import React from 'react'
 
 function AdminWord() {
-  return <div>My word</div>
+  return <div>AdminWord</div>
 }
 
 export default AdminWord

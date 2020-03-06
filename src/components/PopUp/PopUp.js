@@ -30,7 +30,7 @@ function PopUp() {
     setLoadingLayout(true)
   }
 
-  if (loadingLayout) {
+  if (loadingLayout && username !== '') {
     return (
       <UserContext.Provider value={username}>
         <CompleteLayout />
