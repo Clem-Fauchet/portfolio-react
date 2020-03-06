@@ -1,6 +1,8 @@
 .info-box {
   grid-column: 3/4;
+  justify-self: center;
   grid-row: 3/4;
+  width: 80%; 
   display: flex;
   flex-direction: column;
   justify-content: space-around;

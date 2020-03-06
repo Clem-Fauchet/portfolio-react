@@ -15,6 +15,10 @@ $shadow-bloc: 'shadow-bloc';
 $shadow-card: 'shadow-card';
 $shadow-book: 'shadow-book';
 
+$bg-castle-hover: 'bg-castle-hover';
+$bg-castle: 'bg-castle';
+$bg-border: 'bg-border';
+
 //themes
 $themes: (
 
@@ -34,6 +38,10 @@ $themes: (
         shadow-bloc: $dark-shadow-bloc,
         shadow-card: $dark-shadow-card,
         shadow-book: $dark-shadow-book,
+
+        bg-castle-hover:$dark-color-hover,
+        bg-castle:$dark-color-castle,
+        bg-border:$dark-color-border,
     ),
 
   light: (
@@ -52,6 +60,10 @@ $themes: (
     shadow-bloc: $light-shadow-bloc,
     shadow-card: $light-shadow-card,
     shadow-book: $light-shadow-book,
+
+    bg-castle-hover:$light-color-hover,
+    bg-castle:$light-color-castle,
+    bg-border:$light-color-border,
 
   )
 );

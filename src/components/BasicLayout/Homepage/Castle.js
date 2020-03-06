@@ -1,7 +1,13 @@
 import React from 'react'
 
+import { ReactComponent as Hogwarts } from '../../../assets/castle.svg'
+
 function Castle() {
-  return <div>Castle</div>
+  return (
+    <div className='castle'>
+      <Hogwarts />
+    </div>
+  )
 }
 
 export default Castle

@@ -3,12 +3,12 @@ import { UserContext } from '../../PopUp/PopUp'
 
 import { ReactComponent as Times } from '../../../assets/times.svg'
 
-
 function InfoBox() {
   const username = useContext(UserContext)
+
   return (
     <div className='info-box'>
-    <Times/>
+      <Times />
       <h2>Hi {username}!</h2>
       <h3>I'm Clem, I'm a front end developer and I am your host.</h3>
       <p>
