@@ -8,7 +8,7 @@
 
   .st6, .st7 {
     @include themed() {
-      // stroke: t($text);
+      // stroke: t($text); //best with white line
     }
   }
 
@@ -18,17 +18,44 @@
     }
   }
 
-  .castle-fill, .potion, .history, .defense, .trap {
+  .castle-fill, .trap {
     @include themed() {
       fill: t($bg-castle);
     }
   }
+
+  .potion, .history, .defense, .trap{
+    @include themed() {
+      fill: t($bg-building);
+    }
+    animation: lighting 1.8s;
+  }
   
+  .defense {
+    animation-delay: $animation-delay;
+  }
+
+  .history {
+    animation-delay: $animation-delay * 2;
+  }
+
+  .potion {
+    animation-delay: $animation-delay * 3;
+  }
+
+  @keyframes lighting  {
+   50% {
+      opacity: .65;
+      fill: $dark-color-hover;
+    }
+  }
+
   .potion:hover, .history:hover, .defense:hover, .trap:hover {
     cursor: pointer;
     @include themed() {
       fill: t($bg-castle-hover);
     }
   }
+
 
 }

@@ -18,6 +18,7 @@ $shadow-book: 'shadow-book';
 $bg-castle-hover: 'bg-castle-hover';
 $bg-castle: 'bg-castle';
 $bg-border: 'bg-border';
+$bg-building: 'bg-building';
 
 //themes
 $themes: (
@@ -42,6 +43,7 @@ $themes: (
         bg-castle-hover:$dark-color-hover,
         bg-castle:$dark-color-castle,
         bg-border:$dark-color-border,
+        bg-building: $dark-color-building,
     ),
 
   light: (
@@ -64,6 +66,7 @@ $themes: (
     bg-castle-hover:$light-color-hover,
     bg-castle:$light-color-castle,
     bg-border:$light-color-border,
+    bg-building: $light-color-building,
 
   )
 );

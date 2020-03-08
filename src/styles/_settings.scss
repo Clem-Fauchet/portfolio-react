@@ -48,13 +48,19 @@ $nav-height: 100px;
 
 
 //castle colors
-$dark-color-hover: #596A6A;
+$dark-color-hover: #404f4f;
 $dark-color-castle: #171B1D; 
-$dark-color-border: #171B1DBA;
+$dark-color-border: #171b1d82;
+$dark-color-building: #131415;
 
-$light-color-hover: #596A6A;
+
+$light-color-hover: #404f4f;
 $light-color-castle: #CAD6D6 ; 
 $light-color-border: #869494;
+$light-color-building: #B0B7B7;
+
+$animation-delay: 1.3s;
+
 
 //shadows 
 $dark-shadow-bloc: 0px 4px 4px #1E1E1D;
