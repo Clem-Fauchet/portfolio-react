@@ -4,7 +4,7 @@ import './styles/App.scss'
 import { FaSun } from 'react-icons/fa'
 import { IoIosMoon } from 'react-icons/io'
 import PopUp from './components/PopUp/PopUp'
-import CompleteLayout from './components/BasicLayout/CompleteLayout'
+import HomepageLayout from './components/BasicLayout/Homepage/HomepageLayout'
 
 function App() {
   const [themeLight, setThemeLight] = useState(false)
@@ -23,7 +23,7 @@ function App() {
         )}
       </div>
       {/* <PopUp /> */}
-      <CompleteLayout />
+      <HomepageLayout />
     </div>
   )
 }

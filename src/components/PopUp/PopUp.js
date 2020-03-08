@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
-import CompleteLayout from '../BasicLayout/CompleteLayout'
+import HomepageLayout from '../BasicLayout/Homepage/HomepageLayout'
 
 export const UserContext = React.createContext()
 
@@ -33,7 +33,7 @@ function PopUp() {
   if (loadingLayout && username !== '') {
     return (
       <UserContext.Provider value={username}>
-        <CompleteLayout />
+        <HomepageLayout />
       </UserContext.Provider>
     )
   } else {
