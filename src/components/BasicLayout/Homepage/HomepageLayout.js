@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 
 import NavBar from '../../NavBar/NavBar'
-import InfoBox from './InfoBox'
 import Footer from '../Footer'
+
+import InfoBox from './InfoBox'
 import Castle from './Castle'
 
 function HomepageLayout() {

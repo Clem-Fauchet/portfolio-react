@@ -24,11 +24,17 @@
     }
   }
 
-  .potion, .history, .defense, .trap{
+  .potion, .history, .defense {
     @include themed() {
       fill: t($bg-building);
     }
     animation: lighting 1.8s;
+  }
+
+  .trap {
+    @include themed() {
+      fill: t($bg-building);
+    }
   }
   
   .defense {
@@ -42,6 +48,8 @@
   .potion {
     animation-delay: $animation-delay * 3;
   }
+
+  
 
   @keyframes lighting  {
    50% {

@@ -1,17 +1,18 @@
 import React from 'react'
 
-import NavBar from '../NavBar/NavBar'
-import Footer from '../Footer'
 import AdminWord from '../AdminWord'
+
+import NavBar from '../../NavBar/NavBar'
+import Footer from '../Footer'
 
 function WebDevLayout() {
   return (
-    <>
-     <NavBar/>
-     <AdminWord/>
-     <p>Web Dev</p>
-     <Footer/>
-    </>
+    <div className='layout'>
+      <NavBar />
+      <AdminWord />
+      <p style={{ color: 'white', zIndex: 999 }}>Web Dev</p>
+      <Footer />
+    </div>
   )
 }
 

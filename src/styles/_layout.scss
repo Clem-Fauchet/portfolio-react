@@ -27,6 +27,13 @@
     background-color: t($bg-second);
     border: t($nav-border);
   }
+  
+  a, a:focus {
+    text-decoration: none;
+    @include themed() {
+      color: t($text);
+    }
+  }
 
   .link {
     display: flex;

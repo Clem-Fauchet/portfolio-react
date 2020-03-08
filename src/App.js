@@ -4,7 +4,7 @@ import './styles/App.scss'
 import { FaSun } from 'react-icons/fa'
 import { IoIosMoon } from 'react-icons/io'
 import PopUp from './components/PopUp/PopUp'
-import HomepageLayout from './components/BasicLayout/Homepage/HomepageLayout'
+import BasicLayout from './components/BasicLayout/BasicLayout'
 
 function App() {
   const [themeLight, setThemeLight] = useState(false)
@@ -22,8 +22,8 @@ function App() {
           <FaSun className='icon' onClick={changingTheme} />
         )}
       </div>
-      {/* <PopUp /> */}
-      <HomepageLayout />
+      <PopUp />
+      {/* <BasicLayout /> */}
     </div>
   )
 }
