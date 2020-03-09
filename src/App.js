@@ -4,7 +4,7 @@ import './styles/App.scss'
 import { FaSun } from 'react-icons/fa'
 import { IoIosMoon } from 'react-icons/io'
 import PopUp from './components/PopUp/PopUp'
-import HomepageLayout from './components/BasicLayout/Homepage/HomepageLayout'
+import WebDevLayout from './components/BasicLayout/WebDev/WebDevLayout'
 
 export const LoadContext = React.createContext()
 
@@ -83,8 +83,8 @@ function App() {
       </div>
 
       <LoadContext.Provider value={{ loadState: load, loadDispatch: dispatch }}>
-        {/* <HomepageLayout /> */}
-        <PopUp />
+        {/* <PopUp /> */}
+        <WebDevLayout />
       </LoadContext.Provider>
     </div>
   )

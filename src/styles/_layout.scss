@@ -21,6 +21,8 @@
   align-items: center;
   box-shadow: $nav-shadow;
   border-radius: $nav-radius;
+
+  
   
 
   @include themed() {
@@ -51,6 +53,11 @@
     li {
       list-style-type: none;
       cursor: pointer;
+      
+      &.active {
+        color: $common-color;
+        border-bottom: 1px solid $common-color;
+      }
     }
   }
 
