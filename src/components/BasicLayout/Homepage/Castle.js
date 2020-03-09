@@ -16,15 +16,19 @@ function Castle() {
 
       <Potion
         onClick={() => loadContext.loadDispatch({ type: 'loadPrevious' })}
-        className={`${loadContext.loadState.previous ? 'active' : ''}`}
+        className={`potionSvg ${
+          loadContext.loadState.previous ? 'active' : ''
+        }`}
       />
       <Defense
         onClick={() => loadContext.loadDispatch({ type: 'loadProjects' })}
-        className={`${loadContext.loadState.projects ? 'active' : ''}`}
+        className={`defenseSvg ${
+          loadContext.loadState.projects ? 'active' : ''
+        }`}
       />
       <History
         onClick={() => loadContext.loadDispatch({ type: 'loadWeb' })}
-        className={`${loadContext.loadState.web ? 'active' : ''}`}
+        className={`historySvg ${loadContext.loadState.web ? 'active' : ''}`}
       />
       <Trap />
     </div>

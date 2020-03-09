@@ -26,6 +26,8 @@ $dark-color-text: #FFF;
 $dark-nav-border: 1px solid #171B1D;
 $dark-background-user: #171B1D;
 $dark-input-background: #C2D0D3;
+$dark-admin-background: #242B2D;
+$dark-admin-border: 1px solid rgba(255,255,255,.23);
 
 $light-color-main: #FFF;
 $light-color-secondary: #F3FDFF;
@@ -35,6 +37,8 @@ $light-color-text: #22292B;
 $light-nav-border: 1px solid #F3FDFF;
 $light-background-user: #D8BDDD;
 $light-input-background:#303536;
+$light-admin-background: #FBFEFF;
+$light-admin-border: 1px solid #171B1D;
 
 $border-opacity: 23%;
 $common-color: #FF9115;
@@ -106,6 +110,7 @@ $dark-shadow-book:
 $size-nav: 23px;
 $size-word: 21px;
 $size-user: 13px;
+
 
 $size-web-title: 22px;
 $size-recipe-title: 18px;

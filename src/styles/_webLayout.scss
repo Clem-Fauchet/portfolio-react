@@ -1,0 +1,103 @@
+.book {
+  grid-column: 2/5;
+  grid-row: 3/4;
+  justify-self: center;
+  width: 80%;
+  height: 35vh;
+  text-align: center;
+
+  @include themed() {
+    background: t($bg-third);
+    box-shadow: t($shadow-book);
+  }
+
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+
+  h3 {
+    font-family: $font;
+    font-weight: map-get($font-weight, 'bold');
+    font-size: $size-web-title;
+    width: 100%;
+    text-decoration: underline;
+  
+    @include themed() {
+      color: t($text);
+    }
+  }
+
+  .first-col, .second-col {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+
+  .first-col {
+    border-right: 2px solid $common-color;
+   
+  
+    p {
+      font-family: $font;
+      font-weight: map-get($font-weight, 'medium');
+      font-size: $size-text;
+      width: 75%;
+      margin-bottom: 5vh;
+      
+      @include themed() {
+        color: t($text);
+      }
+    }
+  }
+
+  .second-col {
+    ul {
+      width: 80%;
+      list-style: none;
+      text-align: left;
+
+      li {
+        font-family: $font;
+        font-weight: map-get($font-weight, 'medium');
+        font-size: $size-text;
+        padding: 2px 0;
+
+        @include themed() {
+          color: t($text);
+        }
+      }
+      
+    }
+
+  button {
+      outline: none;
+      border: none;
+      width:200px;
+      height: 45px;
+      border-radius: 12px;
+      box-shadow: $shadow-button;
+      align-self: flex-end;
+      cursor: pointer;
+
+      font-family: $font-admin;
+      font-weight: map-get($font-weight, 'bold');
+      font-size: $size-button;
+      color: $common-color;
+
+      @include themed() {
+        background-color: t($bg);
+      }
+
+      &:hover, &:focus {
+        @include themed() {
+          background-color: t($bg-second);
+        }
+      }
+    }
+  }
+
+  
+}

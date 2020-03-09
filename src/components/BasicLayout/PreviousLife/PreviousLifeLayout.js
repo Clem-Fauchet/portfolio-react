@@ -1,15 +1,18 @@
 import React from 'react'
 
-import NavBar from '../../NavBar/NavBar'
-import Footer from '../Footer'
 import AdminWord from '../AdminWord'
 
+import NavBar from '../../NavBar/NavBar'
+import Footer from '../Footer'
+import { admin } from '../admin'
+
 function PreviousLifeLayout() {
+  const word = admin.map((message) => message.word)
   return (
     <div className='layout'>
       <NavBar />
-      <AdminWord />
-      <p style={{ color: 'white', zIndex: 999 }}>Previous Life</p>
+      <AdminWord word={word[2]} />
+
       <Footer />
     </div>
   )

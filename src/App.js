@@ -5,6 +5,7 @@ import { FaSun } from 'react-icons/fa'
 import { IoIosMoon } from 'react-icons/io'
 import PopUp from './components/PopUp/PopUp'
 import WebDevLayout from './components/BasicLayout/WebDev/WebDevLayout'
+import HogwartsLayout from './components/BasicLayout/Homepage/HogwartsLayout'
 
 export const LoadContext = React.createContext()
 
