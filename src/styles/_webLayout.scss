@@ -14,6 +14,7 @@
   display: flex;
   justify-content: space-between;
   padding: 15px;
+  margin-bottom: 60px;
 
   h3 {
     font-family: $font;
@@ -96,6 +97,41 @@
           background-color: t($bg-second);
         }
       }
+    }
+  } 
+}
+
+.skills {
+  grid-column: 2/5;
+  grid-row: 3/4;
+  justify-self: center;
+  width: 80%;
+  height: 55vh;
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  
+  .progressBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 6%;
+    padding: 5px;
+    border: 2px solid orange;
+
+    .name {
+      width: 100%;
+      border: 1px solid white;  
+    }
+
+    .iconBloc {
+      width: 60px;
+      height: 60px;
+      align-self: center;
+      margin: auto;
+      border: 2px solid blue;
+  
+  
     }
   }
 

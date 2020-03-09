@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 80px;
 
   @include themed() {
     background: t($bg-admin);
