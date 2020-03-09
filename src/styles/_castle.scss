@@ -4,9 +4,10 @@
   justify-self: center;
   align-self: center;
   width:90%;
-  transform: scale(1.30);
+  transform: scale(1.3);
+  position: relative;
 
-  .st6, .st7 {
+  .st6 {
     @include themed() {
       // stroke: t($text); //best with white line
     }
@@ -29,12 +30,14 @@
       fill: t($bg-building);
     }
     animation: lighting 1.8s;
+    cursor: pointer;
   }
 
   .trap {
     @include themed() {
       fill: t($bg-building);
     }
+    cursor: pointer;
   }
   
   .defense {
@@ -58,12 +61,44 @@
     }
   }
 
-  .potion:hover, .history:hover, .defense:hover, .trap:hover {
-    cursor: pointer;
-    @include themed() {
-      fill: t($bg-castle-hover);
-    }
+  .potionSvg, .defenseSvg, .historySvg, .trapSvg {
+    position: absolute;
+    transform: scale(0.88);
   }
 
+  .potionSvg {
+    top: 51%;
+    left: 69.8%;
+  }
 
-}
+  .defenseSvg {
+    top: 48.8%;
+    left: 13.8%;
+  }
+
+  .historySvg {
+    top: 0.4%;
+    left: 34.7%;
+  }
+
+  .trapSvg {
+    top: 72.8%;
+    left: 46.6%;
+  }
+
+  .potionItem, .defenseItem, .historyItem, .trapItem {
+    cursor: pointer;
+    opacity: 0;
+
+     &:hover {
+       @include themed() {
+        fill: t($bg-castle-hover);
+         opacity: 0.5;
+       }
+     }
+   }
+  
+  }
+
+ 
+

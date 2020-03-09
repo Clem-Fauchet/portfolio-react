@@ -1,0 +1,7 @@
+
+<svg class='potionSvg' version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 115 182" width='115' height='182'>
+
+<path class="potionItem" d="M1.7,180.9V65.5h32.5V42.3L64.1,0l3.1,0.4l37,37.1v13.3l9.1,6.7V178l-39.6,0l-0.9-28.7c0,0-5.8-6.4-13.6-7
+	c-9.3-0.7-14.1,7.7-14.1,7.7l-0.4,28l-16.9,0l-15.1,4l-11,0.1V180.9z"/>
+</svg>
