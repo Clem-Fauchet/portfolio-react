@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useReducer } from 'react'
 import './styles/App.scss'
 
 import { FaSun } from 'react-icons/fa'
@@ -6,12 +6,57 @@ import { IoIosMoon } from 'react-icons/io'
 import PopUp from './components/PopUp/PopUp'
 import HomepageLayout from './components/BasicLayout/Homepage/HomepageLayout'
 
+export const LoadContext = React.createContext()
+
+const initialState = {
+  home: true,
+  web: false,
+  projects: false,
+  previous: false,
+}
+
+const reducer = (state, action) => {
+  switch (action.type) {
+    case 'loadWeb':
+      return {
+        ...state,
+        home: false,
+        web: true,
+        projects: false,
+        previous: false,
+      }
+
+    case 'loadProjects':
+      return {
+        ...state,
+        home: false,
+        web: false,
+        projects: true,
+        previous: false,
+      }
+
+    case 'loadPrevious':
+      return {
+        ...state,
+        home: false,
+        web: false,
+        projects: false,
+        previous: true,
+      }
+
+    default:
+      return initialState
+  }
+}
+
 function App() {
   const [themeLight, setThemeLight] = useState(false)
 
   const changingTheme = () => {
     setThemeLight(!themeLight)
   }
+
+  const [load, dispatch] = useReducer(reducer, initialState)
 
   return (
     <div className={`App ${themeLight ? 'theme--light' : 'theme--dark'}`}>
@@ -22,8 +67,11 @@ function App() {
           <FaSun className='icon' onClick={changingTheme} />
         )}
       </div>
-      {/* <PopUp /> */}
-      <HomepageLayout />
+
+      <LoadContext.Provider value={{ loadState: load, loadDispatch: dispatch }}>
+        <HomepageLayout />
+        {/* <PopUp /> */}
+      </LoadContext.Provider>
     </div>
   )
 }
