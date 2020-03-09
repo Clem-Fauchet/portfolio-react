@@ -10,7 +10,7 @@ function Links() {
       <Link to='/'>
         <li
           style={{ color: '#FF9115' }}
-          onClick={() => loadContext.loadDispatch({ type: 'default' })}
+          onClick={() => loadContext.loadDispatch({ type: 'loadHogwarts' })}
         >
           Hogwarts
         </li>

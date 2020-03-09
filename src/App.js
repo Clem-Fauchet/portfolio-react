@@ -10,6 +10,7 @@ export const LoadContext = React.createContext()
 
 const initialState = {
   home: true,
+  hogwarts: false,
   web: false,
   projects: false,
   previous: false,
@@ -21,6 +22,7 @@ const reducer = (state, action) => {
       return {
         ...state,
         home: false,
+        hogwarts: false,
         web: true,
         projects: false,
         previous: false,
@@ -30,6 +32,7 @@ const reducer = (state, action) => {
       return {
         ...state,
         home: false,
+        hogwarts: false,
         web: false,
         projects: true,
         previous: false,
@@ -39,9 +42,20 @@ const reducer = (state, action) => {
       return {
         ...state,
         home: false,
+        hogwarts: false,
         web: false,
         projects: false,
         previous: true,
+      }
+
+    case 'loadHogwarts':
+      return {
+        ...state,
+        home: false,
+        hogwarts: true,
+        web: false,
+        projects: false,
+        previous: false,
       }
 
     default:
@@ -69,8 +83,8 @@ function App() {
       </div>
 
       <LoadContext.Provider value={{ loadState: load, loadDispatch: dispatch }}>
-        <HomepageLayout />
-        {/* <PopUp /> */}
+        {/* <HomepageLayout /> */}
+        <PopUp />
       </LoadContext.Provider>
     </div>
   )
