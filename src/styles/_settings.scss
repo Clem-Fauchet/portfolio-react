@@ -20,7 +20,7 @@ $font-weight: (
 //colors themes
 $dark-color-main: #22292B;
 $dark-color-secondary: #171B1D;
-$dark-color-secondary-opacity: rgba(23, 27, 29, 0.301);
+$dark-color-secondary-opacity: rgba(23, 27, 29, 0.701);
 $dark-color-third: #262E30;
 $dark-color-text: #FFF;
 $dark-nav-border: 1px solid #171B1D;
@@ -31,7 +31,7 @@ $dark-admin-border: 1px solid rgba(255,255,255,.23);
 
 $light-color-main: #FFF;
 $light-color-secondary: #F3FDFF;
-$light-color-secondary-opacity: rgba(243, 253, 255, 0.301);
+$light-color-secondary-opacity: rgba(243, 253, 255, 0.701);
 $light-color-third: #FAFAFA;
 $light-color-text: #22292B;
 $light-nav-border: 1px solid #F3FDFF;
@@ -69,7 +69,7 @@ $animation-delay: 1.3s;
 
 //shadows 
 $dark-shadow-bloc: 0px 4px 4px #1E1E1D;
-$dark-shadow-card: 0px 2px 2px #171B1D;
+$dark-shadow-card: -20px 0px 2px #171B1D;
 $dark-shadow-popup: 0px 3px 4px #593913;
 $dark-shadow-user: inset 0px 1px 2px rgba(255,255,255,.25);
 $dark-shadow-bar: -6px 0px 2px #949c9f3d;
@@ -77,7 +77,7 @@ $dark-shadow-bar: -6px 0px 2px #949c9f3d;
 
 
 $light-shadow-bloc: 0px 4px 4px rgba(30,30,29,.31);
-$light-shadow-card: 0px 2px 2px rgba(23,27,29,.31);
+$light-shadow-card: -20px 0px 2px rgba(23,27,29,.31);
 $light-shadow-popup: 0px 3px 3px #E1A45A;
 $light-shadow-user: inset 0px 1px 2px rgba(33,31,31,.25);
 $light-shadow-bar: -6px 0px 2px rgba(23,27,29,.31);
@@ -132,8 +132,6 @@ $screen-xs: 480px;
 $screen-sm: 768px;
 $screen-md: 992px;
 $screen-lg: 1200px;
-
-
 
 
 

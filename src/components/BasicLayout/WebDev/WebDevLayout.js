@@ -14,6 +14,7 @@ function WebDevLayout() {
   return (
     <div className='layout'>
       <NavBar />
+
       <div className='content'>
         <AdminWord word={word[0]} />
         <Book />

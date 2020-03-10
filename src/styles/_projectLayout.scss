@@ -1,0 +1,129 @@
+.projectBloc {
+  grid-column: 2/5;
+  grid-row: 3/4;
+  justify-self: center;
+  width: 80%;
+  height: 40vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0px;
+  padding-bottom: 40px;
+ 
+  @include themed() {
+    border-bottom: 3px solid t($text);
+  }
+
+  $b: 16px;
+
+  .image {
+    width: 25%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 98%, 18% 98%, 0% 38%);
+    transform: scale(0.80);
+    opacity: .9;
+    background-origin: border-box;
+    background-clip: padding-box;
+    position: relative;
+    perspective: 1000px;
+    perspective-origin: center;
+
+
+    
+    @include themed() {
+      border: $b solid t($text);
+    }
+
+    &:hover {
+      transform: scale(0.80) rotateY(360deg);
+      transition: transform .8s ease;
+      cursor: pointer;
+    }
+
+    &:before {
+      position: absolute;
+      z-index: -1;
+      top: -$b; right: -$b; bottom: -$b; left: -$b;
+      border: inherit; 
+      background-clip: border-box;
+      filter: blur(10px);
+      content: '';
+     
+    }
+
+    
+
+
+  }
+
+
+  .description {
+    width: 70%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 30px;
+    font-family: $font;
+
+    @include themed() {
+      background-color: t($bg);
+      box-shadow: t($shadow-bloc);
+      color: t($text);
+    }
+
+    .title {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+
+      h3 {
+        font-weight: map-get($font-weight, 'bold');
+        color: $common-color;
+        font-size: $size-web-title;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 2%;
+      }
+
+      button {
+        outline: none;
+        border: none;
+        width: 165px;
+        height: 32px;
+        box-shadow: $shadow-button;
+        font-family: $font-admin;
+        font-weight: map-get($font-weight, 'bold');
+        font-size: $size-button;
+        border-radius: $button-radius;
+      
+        @include themed() {
+          background-color: t($bg-second);  
+        }
+
+        a, a:focus {
+          outline: none;
+          text-decoration: none;
+          color: $common-color;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+        }
+      }
+    }
+
+    h4, p {
+        width: 80%;
+        font-weight: map-get($font-weight, 'medium');
+        margin: 0;
+        text-align: center;
+    }
+  }
+
+
+
+}

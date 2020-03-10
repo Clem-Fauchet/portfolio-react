@@ -78,7 +78,7 @@
       border: none;
       width:200px;
       height: 45px;
-      border-radius: 12px;
+      border-radius:$button-radius;
       box-shadow: $shadow-button;
       align-self: flex-end;
       cursor: pointer;
@@ -138,10 +138,49 @@
     }
 
     .iconBloc {
+      position: relative; 
       width: 60px;
       height: 60px;
       align-self: center;
       margin: auto;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      cursor: pointer;
+      
+      span {
+        position:absolute;
+        width: 100%;
+        height: 100%;
+        transform: translateY(100%);
+        visibility: hidden;
+        opacity:0;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+
+        h3 {
+          font-family: $font;
+          font-weight: map-get($font-weight, 'medium');
+          font-size: $size-text;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          line-height: 50px;
+        }
+        
+        @include themed() {
+          color: t($text);
+          background-color: t($bg-second-opacity);
+        }
+      }
+    }
+
+    .iconBloc:hover {
+      span {
+        transform: translateY(0%);
+        visibility: visible;
+        opacity:1;
+        transition: transform 0.5s ease, opacity 0.7s ease;
+      }
     }
 
     .bar {
@@ -163,18 +202,11 @@
         width: 100%;
         transition: height 2s ease-in-out;
        
-      
         @include themed() {
           background-color: t($text);
           box-shadow: t($shadow-bar);
          }
-        
       }
-
-    }
-
-    
-  }
-
-  
+    }  
+  }  
 }

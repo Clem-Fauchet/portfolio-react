@@ -11,7 +11,9 @@ function PreviousLifeLayout() {
   return (
     <div className='layout'>
       <NavBar />
-      <AdminWord word={word[2]} />
+      <div className='content'>
+        <AdminWord word={word[2]} />
+      </div>
 
       <Footer />
     </div>

@@ -24,6 +24,9 @@ function ProgressBar({ name, icon, progress }) {
       </div>
       <div className='iconBloc'>
         <img src={icon} alt='icon' />
+        <span>
+          <h3>{progress}%</h3>
+        </span>
       </div>
       <Bar progress={progress} />
     </div>
