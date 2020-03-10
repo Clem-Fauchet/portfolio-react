@@ -8,9 +8,16 @@
 @import 'adminWord';
 @import 'webLayout';
 
-.App {
-  width: 100vw;
-  min-height: 100vh;
-  display: flex;
-  position: relative;
+#root {
+  overflow: hidden;
+
+  .App {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+  }
 }
+
+

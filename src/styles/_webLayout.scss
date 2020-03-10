@@ -14,7 +14,7 @@
   display: flex;
   justify-content: space-between;
   padding: 15px;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 
   h3 {
     font-family: $font;
@@ -102,26 +102,39 @@
 }
 
 .skills {
-  grid-column: 2/5;
+  grid-column: 2/4;
   grid-row: 3/4;
   justify-self: center;
   width: 80%;
-  height: 55vh;
+  height: 45vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-self: center;
-  
+  overflow: hidden;
+
+
   .progressBar {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 6%;
-    padding: 5px;
-    border: 2px solid orange;
-
+    width: 9%;
+    padding: 0;
+    margin: 0;
+        
     .name {
       width: 100%;
-      border: 1px solid white;  
+      margin-bottom: 20px;
+  
+      h3 {
+        font-family: $font;
+        font-weight: map-get($font-weight, 'medium');
+        font-size: $size-recipe-title;
+        text-align: center;
+        
+        @include themed() {
+          color: t($text);
+        }
+      }
     }
 
     .iconBloc {
@@ -129,10 +142,38 @@
       height: 60px;
       align-self: center;
       margin: auto;
-      border: 2px solid blue;
-  
-  
     }
+
+    .bar {
+      margin-top: 2em;;
+      width: 20px;
+      padding: 2px;
+      height: 100%;
+      border-radius: 10px;
+      align-self: center;
+      align-content: center;
+
+      @include themed() {
+       border: t($border-admin);
+       background-color: t($bg-second);
+      }
+
+      .progress-bar{
+        border-radius: 10px;
+        width: 100%;
+        transition: height 2s ease-in-out;
+       
+      
+        @include themed() {
+          background-color: t($text);
+          box-shadow: t($shadow-bar);
+         }
+        
+      }
+
+    }
+
+    
   }
 
   

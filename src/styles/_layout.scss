@@ -5,9 +5,7 @@
   display: grid;
   grid-template-rows: $nav-height 40px auto 30px $nav-height;
   grid-template-columns: 60px 0.4fr 2fr 0.4fr 60px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  
+
   @include themed() {
     background-color: t($bg);
   }
@@ -27,6 +25,7 @@
 
 .nav {
   position: fixed;
+  z-index: 99999;
   width: 100%;
   height: $nav-height;
   display: flex;
@@ -99,10 +98,11 @@
 
 .footer, .icons {
   width: 180px;
+  z-index: 999;
   height: $nav-height;
   position: absolute;
-  bottom: 0%;
-  right: 0%;
+  bottom: 0;
+  right: 0;
   
   @include themed() {
     fill: t($bg-second);

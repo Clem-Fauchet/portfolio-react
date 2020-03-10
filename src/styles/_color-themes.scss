@@ -16,6 +16,7 @@ $shadow-card: 'shadow-card';
 $shadow-book: 'shadow-book';
 $bg-admin: 'bg-admin';
 $border-admin: 'border-admin';
+$shadow-bar: 'shadow-bar';
 
 $bg-castle-hover: 'bg-castle-hover';
 $bg-castle: 'bg-castle';
@@ -43,6 +44,7 @@ $themes: (
         shadow-book: $dark-shadow-book,
         bg-admin: $dark-admin-background,
         border-admin: $dark-admin-border,
+        shadow-bar: $dark-shadow-bar,
 
         bg-castle-hover:$dark-color-hover,
         bg-castle:$dark-color-castle,
@@ -68,6 +70,7 @@ $themes: (
     shadow-book: $light-shadow-book,
     bg-admin: $light-admin-background,
     border-admin: $light-admin-border,
+    shadow-bar: $light-shadow-bar,
 
     bg-castle-hover:$light-color-hover,
     bg-castle:$light-color-castle,

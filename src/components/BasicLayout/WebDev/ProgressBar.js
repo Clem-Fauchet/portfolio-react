@@ -1,13 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-function ProgressBar({ name, icon, Progress }) {
+const Bar = ({ progress }) => {
+  const [style, setStyle] = useState({ height: 0 })
+
+  setTimeout(() => {
+    const newStyle = { height: `${progress}%` }
+
+    setStyle(newStyle)
+  }, 5000)
+
+  return (
+    <div className='bar'>
+      <div className='progress-bar' style={style}></div>
+    </div>
+  )
+}
+
+function ProgressBar({ name, icon, progress }) {
   return (
     <div className='progressBar'>
-      <div className='name'>{name}</div>
+      <div className='name'>
+        <h3>{name}</h3>
+      </div>
       <div className='iconBloc'>
         <img src={icon} alt='icon' />
       </div>
-      <div className='bar'></div>
+      <Bar progress={progress} />
     </div>
   )
 }
