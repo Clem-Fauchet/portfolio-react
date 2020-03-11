@@ -1,0 +1,88 @@
+.cauldron {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  .flex-cauldron {
+    height: 75%;
+    width: 100%;
+   
+    .cauldronSvg {
+      width: 600px;
+      height: 600px;
+
+      .cauldronItem {
+        stroke-width: 2;
+
+        @include themed() {
+          fill: t($color-wand);
+         stroke: t($color-wand);
+        }
+
+      }
+
+      .bubble {
+        stroke-width: 5;
+        fill: none;
+        stroke: #F8AD1B;
+      }
+    }
+  }
+
+  
+  #bulle1 {
+    animation: movingBubble1 1.9s linear infinite;
+  }
+
+  @keyframes movingBubble1 {
+    from {
+      transform: rotate(0deg) translateX(4px) rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg) translateX(4px) rotate(-360deg);
+    }
+  }
+
+  #bulle2 {
+    animation: movingBubble1 2s linear infinite;
+  }
+
+  @keyframes movingBubble2 {
+    from {
+      transform: rotate(0deg) translateX(1px) rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg) translateX(1px) rotate(-360deg);
+    }
+  }
+
+  #bulle3 {
+    animation: movingBubble3 2.4s linear infinite;
+  }
+
+  @keyframes movingBubble3 {
+    from {
+      transform: rotate(0deg) translateX(5px) rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg) translateX(5px) rotate(-360deg);
+    }
+  }
+
+  
+  #bulle4 {
+    animation: movingBubble4 1.55s linear infinite;
+  }
+
+  @keyframes movingBubble4 {
+    from {
+      transform: rotate(0deg) translateX(3.5px) rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg) translateX(3.5px) rotate(-360deg);
+    }
+  }
+ 
+}

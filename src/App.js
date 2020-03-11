@@ -84,8 +84,7 @@ function App() {
       </div>
 
       <LoadContext.Provider value={{ loadState: load, loadDispatch: dispatch }}>
-        {/* <PopUp /> */}
-        <PreviousLifeLayout />
+        <PopUp />
       </LoadContext.Provider>
     </div>
   )

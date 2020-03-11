@@ -1,24 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Cauldron" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#22292B;stroke:#22292B;stroke-width:5;stroke-miterlimit:10;}
-	.st1{fill:#22292B;stroke:#22292B;stroke-width:4;stroke-miterlimit:10;}
-	.st2{fill:none;stroke:#F8AD1B;stroke-width:5;stroke-miterlimit:10;}
-</style>
-<g id="Cauldron_1_">
-	<path class="st0" d="M134.5,236.1c-16.1,20.9-29.1,70.3-29.1,95.2c0,26.8,13.3,43.2,18.5,55c1.4,3.2,2.2,6.6,2.2,10.1
+
+<svg version="1.1" class="cauldronSvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" >
+
+<g class="cauldronItem">
+	<path  d="M134.5,236.1c-16.1,20.9-29.1,70.3-29.1,95.2c0,26.8,13.3,43.2,18.5,55c1.4,3.2,2.2,6.6,2.2,10.1
 		c0,0-2,22.1,0,29.1c1.4,4.9,9.4,14.7,14.6,14.6c3.4-0.1,7.9-4.8,11.7-9.7c5-6.4,13.4-9.3,21.2-7.1c21.6,6,62.8,16.8,80.1,16.8
 		c17.3,0,57.8-10.8,80.1-17c8.4-2.4,17.4,1,22.1,8.3c2.9,4.5,6.3,8.5,9.2,8.8c5.7,0.4,14.5-10.6,16.1-16.1c1.8-6.1,0-25.4,0-25.4
 		c0-3.4,0.7-6.8,2.1-10c5.2-12.1,18.6-35.1,18.6-57.3c0-25.1-10.4-81.6-31.4-95.2c-7.9-5.1-43-7.6-37.5,0
 		c13.8,19.4,36.5,69.1,36.8,94.5c0.2,15.9-16.9,46.4-29.1,56.7c-16.8,14.1-63.5,19.9-85.5,19.9c-23.3,0.1-72-6.8-90.7-20.7
 		c-12.5-9.3-27.1-40.3-27.6-55.9c-0.8-25.6,21.4-72.8,39.8-94.5C183.4,228.1,134.5,236.1,134.5,236.1"/>
-	<path class="st1" d="M393.8,236.1H113.4c-4.4,0-8-3.6-8-8v-8c0-4.4,3.6-8,8-8h280.4c4.4,0,8,3.6,8,8v8
+	<path  d="M393.8,236.1H113.4c-4.4,0-8-3.6-8-8v-8c0-4.4,3.6-8,8-8h280.4c4.4,0,8,3.6,8,8v8
 		C401.8,232.5,398.2,236.1,393.8,236.1z"/>
 </g>
-<circle id="bulle1" class="st2" cx="270.3" cy="143.9" r="22"/>
-<circle id="bulle2" class="st2" cx="319" cy="65.3" r="16"/>
-<circle id="bulle3" class="st2" cx="172.6" cy="65.3" r="26"/>
-<circle id="bulle4" class="st2" cx="176.3" cy="161.7" r="14"/>
+<circle id="bulle1" class="bubble" cx="270.3" cy="143.9" r="22"/>
+<circle id="bulle2" class="bubble" cx="319" cy="65.3" r="16"/>
+<circle id="bulle3" class="bubble" cx="172.6" cy="65.3" r="26"/>
+<circle id="bulle4" class="bubble" cx="176.3" cy="161.7" r="14"/>
 </svg>

@@ -7,7 +7,7 @@ const Bar = ({ progress }) => {
     const newStyle = { height: `${progress}%` }
 
     setStyle(newStyle)
-  }, 5000)
+  }, 3500)
 
   return (
     <div className='bar'>

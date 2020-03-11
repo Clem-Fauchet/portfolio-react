@@ -1,3 +1,4 @@
+
 .first-exp, .second-exp {
   width: 50%;
   height: 100%;
@@ -31,7 +32,7 @@
           font-weight: map-get($font-weight, 'bold');
           font-size: $size-bubble-title;
           text-transform: uppercase;
-          padding: 15px 30px;
+          padding: 15px 40px;
         }
 
         h4 {
@@ -112,6 +113,19 @@
         }
       }
     }
+  }
+}
+
+.second-exp {
+  flex-direction: row-reverse;
+
+  .details {
+    transform: translateX(150%);
+
+      li:nth-child(3) {
+        font-family: $font-admin;
+        color: $common-color;
+      }
   }
 }
 

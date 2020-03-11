@@ -3,6 +3,8 @@ import React from 'react'
 import AdminWord from '../AdminWord'
 import Recipe from './Recipe'
 import ExperienceOne from './ExperienceOne'
+import ExperienceTwo from './ExperienceTwo'
+import { ReactComponent as Cauldron } from '../../../assets/cauldron.svg'
 
 import NavBar from '../../NavBar/NavBar'
 import Footer from '../Footer'
@@ -19,7 +21,15 @@ function PreviousLifeLayout() {
           <Recipe />
           <ExperienceOne />
         </div>
-        <div className='second-bloc'>Experience Two & Cauldron</div>
+        <div className='second-bloc'>
+          <ExperienceTwo />
+          <div className='cauldron'>
+            <span className='flex-cauldron'>
+              {' '}
+              <Cauldron />
+            </span>
+          </div>
+        </div>
       </div>
 
       <Footer />

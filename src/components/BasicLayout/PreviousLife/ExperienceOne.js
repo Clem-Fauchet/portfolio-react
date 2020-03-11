@@ -22,7 +22,7 @@ function ExperienceOne() {
 
           <li>
             . ‘Thermodynamic and crystallographic model for anion uptake by
-            hydrated calcium aluminate (AFm): an example of molybdenum’{' '}
+            hydrated calcium aluminate (AFm): an example of molybdenum’
             <a
               href='https://www.nature.com/articles/s41598-018-26211-z'
               target='_blank'
@@ -34,7 +34,7 @@ function ExperienceOne() {
 
           <li>
             . ‘Weathering of an argillaceous rock in the presence of atmospheric
-            conditions: a flow-through experiment and modeling study’{' '}
+            conditions: a flow-through experiment and modeling study’
             <a
               href='https://www.sciencedirect.com/science/article/abs/pii/S0883292718301884'
               target='_blank'
