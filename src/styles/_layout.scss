@@ -34,6 +34,12 @@
   box-shadow: $nav-shadow;
   border-radius: $nav-radius;
 
+  
+  @media screen and (max-width: $screen-lg) {
+    height: $nav-height-md;
+  }
+
+
   @include themed() {
     background-color: t($bg-second);
     border: t($nav-border);
@@ -54,6 +60,10 @@
     font-weight: map-get($font-weight, 'bold');
     text-transform: uppercase;
     font-size: $size-nav;
+
+    @media screen and (max-width: $screen-lg) {
+      font-size: $size-nav-md;
+    }
 
     @include themed() {
       color: t($text);
@@ -81,9 +91,22 @@
     border-radius: $radius-user;
     box-shadow: $shadow-user;
     
+    @media screen and (max-width: $screen-lg) {
+      height: $nav-height-md;
+      padding: 10px;
+    }
+    
     @include themed() {
       background-color: t($bg-second-opacity);
       box-shadow: t($shadow-user);
+    }
+
+    svg {
+      
+      @media screen and (max-width: $screen-lg) {
+        width: 25px;
+        height: 25px;
+      }
     }
 
     h3 {
@@ -91,6 +114,10 @@
       font-weight: map-get($font-weight, 'medium');
       font-size: $size-user;
       color: $common-color;
+
+      @media screen and (max-width: $screen-lg) {
+        font-size: $size-user-md;
+      }
     }
     
   }
@@ -103,6 +130,11 @@
   position: absolute;
   bottom: 0;
   right: 0;
+
+  @media screen and (max-width: $screen-lg) {
+    height: $nav-height-md;
+    width: 165px;
+  }
   
   @include themed() {
     fill: t($bg-second);
@@ -116,10 +148,19 @@
   align-items: center;
   padding: 35px 8px 10px 30px;
 
+  @media screen and (max-width: $screen-lg) {
+    padding: 35px 15px 10px 35px;
+  }
+
   .link {
     cursor: pointer;
     height: 35px;
     width: 35px;
+
+    @media screen and (max-width: $screen-lg) {
+      height: 25px;
+      width: 25px;
+    }
 
     @include themed() {
       fill: t($text);

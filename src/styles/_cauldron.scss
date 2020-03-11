@@ -5,13 +5,28 @@
   align-items: flex-end;
   justify-content: center;
 
+
+  @media screen and (max-width: $screen-lg) {
+    justify-content: flex-start;
+  }
+
   .flex-cauldron {
     height: 75%;
     width: 100%;
+
+    @media screen and (max-width: $screen-lg) {
+      height: 85%;
+      width: 100%;
+     }
    
     .cauldronSvg {
       width: 600px;
       height: 600px;
+
+      @media screen and (max-width: $screen-lg) {
+        width: 380px;
+        height:380px;
+       }
 
       .cauldronItem {
         stroke-width: 2;

@@ -51,6 +51,7 @@ $radius-user: 45px 0px 45px 45px;
 $button-radius: 12px;
 
 $nav-height: 100px;
+$nav-height-md: 85px;
 
 
 //castle colors
@@ -135,5 +136,21 @@ $screen-sm: 768px;
 $screen-md: 992px;
 $screen-lg: 1200px;
 
+//size media queries BETWEEN MD LG
+  $size-nav-md: 21px;
+  $size-word-md: 19px;
+  $size-user-md: 12px;
+
+
+  $size-web-title-md: 20px;
+  $size-recipe-title-md: 16px;
+  $size-bubble-title-md: 18px;
+
+  $size-text-md: 14px;
+
+  $size-bubble-text-md: 11px;
+
+  $size-bubble-button-md: 15px;
+  $size-button-md: 12px;
 
 

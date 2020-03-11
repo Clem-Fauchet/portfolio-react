@@ -6,6 +6,10 @@
   align-self: flex-end;
   margin-bottom: -10px;
 
+  @media screen and (max-width: $screen-lg) {
+    height: 52vh;
+  }
+
   @include themed() {
     stroke: t($color-wand);
     fill: t($color-wand);
@@ -31,12 +35,21 @@
   padding: 15px;
   margin-bottom: 80px;
 
+  @media screen and (max-width: $screen-lg) {
+    padding: 10px;
+    height: 42vh;
+  }
+
   h3 {
     font-family: $font;
     font-weight: map-get($font-weight, 'bold');
     font-size: $size-web-title;
     width: 100%;
     text-decoration: underline;
+
+    @media screen and (max-width: $screen-lg) {
+      font-size: $size-web-title-md;
+    }
   
     @include themed() {
       color: t($text);
@@ -62,6 +75,11 @@
       font-size: $size-text;
       width: 75%;
       margin-bottom: 5vh;
+
+      @media screen and (max-width: $screen-lg) {
+        font-size: $size-text-md;
+        margin-bottom: 4vh;
+      }
       
       @include themed() {
         color: t($text);
@@ -80,6 +98,11 @@
         font-weight: map-get($font-weight, 'medium');
         font-size: $size-text;
         padding: 2px 0;
+
+        
+      @media screen and (max-width: $screen-lg) {
+        font-size: $size-text-md;
+      }
 
         @include themed() {
           color: t($text);
@@ -102,6 +125,12 @@
       font-weight: map-get($font-weight, 'bold');
       font-size: $size-button;
       color: $common-color;
+
+      @media screen and (max-width: $screen-lg) {
+        width: 150px;
+        height: 30px;
+        font-size: $size-button-md;
+      }
 
       @include themed() {
         background-color: t($bg);
@@ -127,6 +156,10 @@
   align-self: center;
   overflow: hidden;
 
+  @media screen and (max-width: $screen-lg) {
+    height: 50vh;
+  }
+
 
   .progressBar {
     display: flex;
@@ -135,6 +168,11 @@
     width: 9%;
     padding: 0;
     margin: 0;
+
+    @media screen and (max-width: $screen-lg) {
+      width: 8%;
+    }
+  
         
     .name {
       width: 100%;
@@ -145,6 +183,10 @@
         font-weight: map-get($font-weight, 'medium');
         font-size: $size-recipe-title;
         text-align: center;
+
+        @media screen and (max-width: $screen-lg) {
+          font-size: $size-text-md;
+        }
         
         @include themed() {
           color: t($text);
@@ -162,6 +204,11 @@
       justify-content: center;
       align-content: center;
       cursor: pointer;
+
+      @media screen and (max-width: $screen-lg) {
+        width: 45px;
+        height: 45px;
+      }
       
       span {
         position:absolute;
@@ -180,6 +227,10 @@
           height: 100%;
           text-align: center;
           line-height: 50px;
+
+          @media screen and (max-width: $screen-lg) {
+            font-size: $size-text-md;
+          }
         }
         
         @include themed() {
@@ -206,6 +257,10 @@
       border-radius: 10px;
       align-self: center;
       align-content: center;
+
+      @media screen and (max-width: $screen-lg) {
+        width:16px;
+      }
 
       @include themed() {
        border: t($border-admin);

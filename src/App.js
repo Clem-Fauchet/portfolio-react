@@ -6,6 +6,10 @@ import { IoIosMoon } from 'react-icons/io'
 import PopUp from './components/PopUp/PopUp'
 
 import PreviousLifeLayout from './components/BasicLayout/PreviousLife/PreviousLifeLayout'
+import HomepageLayout from './components/BasicLayout/Homepage/HomepageLayout'
+import HogwartsLayout from './components/BasicLayout/Homepage/HogwartsLayout'
+import WebDevLayout from './components/BasicLayout/WebDev/WebDevLayout'
+import ProjectsLayout from './components/BasicLayout/Projects/ProjectsLayout'
 
 export const LoadContext = React.createContext()
 
@@ -85,6 +89,7 @@ function App() {
 
       <LoadContext.Provider value={{ loadState: load, loadDispatch: dispatch }}>
         <PopUp />
+  
       </LoadContext.Provider>
     </div>
   )

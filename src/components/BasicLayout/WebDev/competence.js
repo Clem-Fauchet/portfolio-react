@@ -57,7 +57,7 @@ export const competence = [
 
   {
     id: 9,
-    tool: 'Adobe tools',
+    tool: 'Adobe',
     icon: '../../../assets/logoSkills/adobe.svg',
     done: 75,
   },

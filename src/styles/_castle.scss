@@ -8,6 +8,10 @@
   position: relative;
   z-index:9999;
 
+  @media screen and (max-width: $screen-lg) {
+    transform: scale(1.5);
+  }
+
   .st6 {
     @include themed() {
       // stroke: t($text); //best with white line
@@ -66,38 +70,55 @@
     position: absolute;
     transform: scale(0.88);
     z-index:99999;
+
+    @media screen and (max-width: $screen-lg) {
+      transform: scale(0.55);
+    }
   }
 
   .potionSvg {
     top: 51%;
     left: 69.8%;
+
+    @media screen and (max-width: $screen-lg) {
+      top: 40.2%;
+      left: 66%
+    }
   }
 
   .defenseSvg {
     top: 48.8%;
     left: 13.8%;
+
+    @media screen and (max-width: $screen-lg) {
+      top: 37.2%;
+      left: 5.2%
+    }
   }
 
   .historySvg {
     top: 0.4%;
     left: 34.7%;
+
+    @media screen and (max-width: $screen-lg) {
+      top: -16%;
+      left: 30%
+    }
   }
 
   .trapSvg {
     top: 72.8%;
     left: 46.6%;
+
+    @media screen and (max-width: $screen-lg) {
+      top: 63.5%;
+      left: 43%
+    }
   }
 
   .potionItem, .defenseItem, .historyItem, .trapItem {
     cursor: pointer;
     opacity: 0;
-
-     &:hover {
-       @include themed() {
-        fill: t($bg-castle-hover);
-         opacity: 0.5;
-       }
-     }
    }
   
   }

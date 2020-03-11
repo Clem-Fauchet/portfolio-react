@@ -12,6 +12,10 @@
   padding: 20px;
   position: relative;
 
+  @media screen and (max-width: $screen-lg) {
+      width: 90%; 
+  }
+
   @include themed() {
     background-color: t($bg-second);
     border: t($nav-border);
@@ -23,6 +27,10 @@
     font-size: 50px;
     color: $common-color;
 
+    @media screen and (max-width: $screen-lg) {
+      font-size: 43px;
+   }
+
     @include themed() {
       text-shadow: t($shadow-popup);
      }
@@ -32,6 +40,11 @@
     font-family: $font-admin;
     font-weight: map-get($font-weight, 'bold');
     font-size: 32px;
+
+    @media screen and (max-width: $screen-lg) {
+      font-size: 27px;
+      text-align: center;
+   }
 
     @include themed() {
       color: t($text);
@@ -45,6 +58,10 @@
     text-align: center;
     width: 83%;
 
+    @media screen and (max-width: $screen-lg) {
+      font-size: 24px;
+   }
+
     @include themed() {
       color: t($text);
      }
@@ -55,6 +72,11 @@
     font-weight: map-get($font-weight, 'medium');
     color: $common-color;
     font-size: 28px;
+
+    @media screen and (max-width: $screen-lg) {
+      font-size: 23px;
+      text-align: center;
+   }
   }
 
 

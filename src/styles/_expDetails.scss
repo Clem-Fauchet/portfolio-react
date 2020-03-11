@@ -6,9 +6,17 @@
   justify-content: space-between;
   align-items: center;
 
+  @media screen and (max-width: $screen-lg) {
+    width: 75%;
+   }
+
   .circle {
     position: relative;
     z-index: 25;
+
+    @media screen and (max-width: $screen-lg) {
+      transform: scale(0.65);
+     }
   
       .text {
         position: absolute;
@@ -21,6 +29,11 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+
+        @media screen and (max-width: $screen-lg) {
+          width: 100%;
+         }
+    
         
   
         @include themed() {
@@ -73,6 +86,10 @@
     display: flex;
     transition: transform 0.6s ease-in-out, opacity 0.7s ease-in-out;
 
+    @media screen and (max-width: $screen-lg) {
+      width: 60%;
+     }
+
     @include themed() {
       background: t($bg-second);
     }
@@ -91,12 +108,27 @@
       height: 90%;
       width: 85%;
 
+      @media screen and (max-width: $screen-lg) {
+        width: 90%;
+        height: 95%;
+       }
+
+      
+    @media screen and (max-width: $screen-lg) {
+      font-size: $size-bubble-text-md;
+     }
+
       @include themed() {
         color: t($text);
       }
 
       li{
         padding: 15px 0px;
+
+        @media screen and (max-width: $screen-lg) {
+          padding: 8px 0px; 
+         }
+    
 
         a, a:focus {
           outline: none;

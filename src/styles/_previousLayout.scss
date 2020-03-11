@@ -8,6 +8,11 @@
   width: 80%;
   height: 55vh;
 
+  @media screen and (max-width: $screen-lg) {
+    width: 90%;
+    height: 70vh;
+  }
+
   display: flex;
   justify-content: space-between;
   padding: 15px;
@@ -24,6 +29,12 @@
     padding: 15px;
     margin-bottom: 80px;
 
+    @media screen and (max-width: $screen-lg) {
+      width: 50%;
+      height: 90%;
+      padding: 8px;
+    }
+
     @include themed() {
       background: t($bg-third);
       box-shadow: t($shadow-book);
@@ -38,6 +49,10 @@
         align-items: center;
         font-size: $size-text;
 
+        @media screen and (max-width: $screen-lg) {
+         font-size: $size-text-md;
+        }
+
         h3 {
           font-weight: map-get($font-weight, 'bold');
           font-size: $size-recipe-title;
@@ -45,6 +60,11 @@
           margin: 10px 0;
           text-decoration: underline;
           text-align: center;
+
+          @media screen and (max-width: $screen-lg) {
+            font-size: $size-recipe-title-md;
+            margin: 6px 0;
+           }
         }
 
         ul {
@@ -66,6 +86,9 @@
       .second-col {
         font-family: $font-admin;
         font-size: $size-text + 1px;
+        @media screen and (max-width: $screen-lg) {
+          font-size: $size-text-md;
+         }
       }
   }
 
