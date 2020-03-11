@@ -16,6 +16,12 @@
     margin-bottom: 40px;
   }
 
+  @media screen and (max-width: $screen-sm) {
+    height: 60px;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
   @include themed() {
     background: t($bg-admin);
     border: t($border-admin);
@@ -35,6 +41,11 @@
       height: 100px;
       width: 100px;
     }
+
+    @media screen and (max-width: $screen-sm) {
+      height: 60px;
+      width: 60px;
+    }
   }
 
   .message {
@@ -43,6 +54,15 @@
     height: 120px;
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: $screen-md) {
+      padding: 30px 10px;
+    }
+
+    @media screen and (max-width: $screen-sm) {
+      padding: 25px 5px;
+    }
+    
     
     p {
       font-family: $font-admin;
@@ -55,6 +75,13 @@
 
       @media screen and (max-width: $screen-md) {
         font-size: 0.9em;
+        height: 100px;
+      }
+
+      @media screen and (max-width: $screen-sm) {
+        font-size: 0.65em;
+        height: 60px;
+        padding: 8px 0px;
       }
 
       @include themed() {

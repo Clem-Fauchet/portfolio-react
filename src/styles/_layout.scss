@@ -48,6 +48,10 @@
     height: $nav-height-sm;
   }
 
+  @media screen and (max-width: $screen-sm) {
+    height: $nav-height-xs;
+  }
+
 
   @include themed() {
     background-color: t($bg-second);
@@ -77,6 +81,11 @@
     @media screen and (max-width: $screen-md) {
       font-size: $size-nav-sm;
       width: 85%;
+    }
+
+    @media screen and (max-width: $screen-sm) {
+      font-size: $size-nav-xs;
+      width: 95%;
     }
 
 
@@ -115,7 +124,9 @@
       height: $nav-height-sm;
     }
 
-   
+    @media screen and (max-width: $screen-sm) {
+      height: $nav-height-sm;
+    }
     
     @include themed() {
       background-color: t($bg-second-opacity);
@@ -133,6 +144,11 @@
         width: 12px;
         height: 12px;
       }
+
+      @media screen and (max-width: $screen-sm) {
+        width: 8px;
+        height: 8px;
+      }
     }
 
     h3 {
@@ -147,6 +163,10 @@
 
       @media screen and (max-width: $screen-md) {
         font-size: $size-user-sm;
+      }
+
+      @media screen and (max-width: $screen-sm) {
+        font-size: $size-user-xs;
       }
     }
     
@@ -206,11 +226,14 @@
       width: 20px;
     }
 
+    @media screen and (max-width: $screen-sm) {
+      height: 17px;
+      width: 17px;
+    }
+
     @include themed() {
       fill: t($text);
-      
     }
-    
   }
 }
 

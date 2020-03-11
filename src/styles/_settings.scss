@@ -53,6 +53,7 @@ $button-radius: 12px;
 $nav-height: 100px;
 $nav-height-md: 85px;
 $nav-height-sm: 50px;
+$nav-height-xs: 35px;
 
 
 //castle colors
@@ -155,7 +156,7 @@ $screen-lg: 1200px;
   $size-button-md: 12px;
 
   
-//size media queries BETWEEN SM MD
+//size media queries BETWEEN SM MD TABLET
 $size-nav-sm: 16px;
 $size-word-sm: 16px;
 $size-user-sm: 9px;
@@ -172,4 +173,19 @@ $size-bubble-text-sm: 11px;
 $size-bubble-button-sm: 12.5px;
 $size-button-sm: 10px;
 
+//size media queries BETWEEN PHONE XL SM
+$size-nav-xs: 10px;
+$size-word-xs: 12px;
+$size-user-xs: 5.5px;
+
+$size-web-title-xs: 11px;
+$size-recipe-title-xs: 11px;
+$size-bubble-title-xs: 10px;
+
+$size-text-xs: 8.5px;
+
+$size-bubble-text-xs: 8px;
+
+$size-bubble-button-xs: 8.5px;
+$size-button-xs: 6.5px;
 

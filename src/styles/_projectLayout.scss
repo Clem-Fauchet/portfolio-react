@@ -23,12 +23,23 @@
     padding-bottom: 15px;
     margin: 20px 0px;
   }
+
+  @media screen and (max-width: $screen-md) {
+    padding-bottom: 10px;
+    margin: 8px 0px;
+  }
  
+  
   @include themed() {
     border-bottom: 3px solid t($text);
   }
 
+  
   $b: 16px;
+
+  @media screen and (max-width: $screen-md) {
+    $b: 6px;
+  }
 
   .image {
     width: 25%;
@@ -53,6 +64,11 @@
     @media screen and (max-width: $screen-md) {
       height: 60%;
       width: 40%;
+    }
+
+    @media screen and (max-width: $screen-xs) {
+      height: 40%;
+      width: 30%;
     }
 
     @include themed() {
@@ -94,6 +110,10 @@
     @media screen and (max-width: $screen-md) {
       width: 75%;
     }
+
+    @media screen and (max-width: $screen-xs) {
+      width: 80%;
+    }
    
     @include themed() {
       background-color: t($bg);
@@ -122,6 +142,11 @@
           font-size: $size-web-title-sm;
           width: 80%;
         }
+
+        @media screen and (max-width: $screen-xs) {
+          font-size: $size-web-title-xs;
+          width: 75%;
+        }
      
       }
 
@@ -146,6 +171,12 @@
           font-size: $size-button-sm;
           width: 100px;
           height: 18px;
+        }
+
+        @media screen and (max-width: $screen-xs) {
+          font-size: $size-button-xs;
+          width: 80px;
+          height: 14px;
         }
       
         @include themed() {
@@ -183,6 +214,12 @@
         @media screen and (max-width: $screen-md) {
           font-size: $size-text-sm;
           width: 95%;
+        }
+
+        @media screen and (max-width: $screen-sm) {
+          font-size: $size-text-xs;
+          width: 100%;
+          padding: 0px 5px;
         }
     }
   }

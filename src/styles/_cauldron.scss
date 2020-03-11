@@ -16,6 +16,10 @@
     width: 75%;
   }
 
+  @media screen and (max-width: $screen-sm) {
+    width: 100%;
+  }
+
   .flex-cauldron {
     height: 75%;
     width: 100%;
@@ -27,6 +31,11 @@
 
      @media screen and (max-width: $screen-md) {
       height: 98%;
+      width: 50%;
+    }
+
+    @media screen and (max-width: $screen-sm) {
+      width: 100%;
     }
    
     .cauldronSvg {
@@ -41,6 +50,11 @@
        @media screen and (max-width: $screen-md) {
         width: 300px;
         height:300px;
+       }
+
+       @media screen and (max-width: $screen-sm) {
+        width: 280px;
+        height:280px;
        }
 
       .cauldronItem {

@@ -21,6 +21,12 @@
     margin-bottom: 25px;
   }
 
+  @media screen and (max-width: $screen-xs) {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 8px;
+  }
+
   display: flex;
   justify-content: space-between;
   padding: 15px;
@@ -48,6 +54,11 @@
       margin-bottom: 0px;
     }
 
+    @media screen and (max-width: $screen-sm) {
+      width: 100%;
+      height: 40%;
+    }
+
     @include themed() {
       background: t($bg-third);
       box-shadow: t($shadow-book);
@@ -71,6 +82,11 @@
           height: 36vh;
          }
 
+         @media screen and (max-width: $screen-sm) {
+          font-size: $size-text-xs;
+          height: 26vh;
+         }
+
         h3 {
           font-weight: map-get($font-weight, 'bold');
           font-size: $size-recipe-title;
@@ -86,6 +102,10 @@
 
            @media screen and (max-width: $screen-md) {
             font-size: $size-recipe-title-sm;
+           }
+
+           @media screen and (max-width: $screen-sm) {
+            font-size: $size-recipe-title-xs;
            }
         }
 
@@ -115,6 +135,10 @@
 
          @media screen and (max-width: $screen-md) {
           font-size: $size-text-sm +1px;
+         }
+
+         @media screen and (max-width: $screen-sm) {
+          font-size: $size-text-xs;
          }
       }
   }

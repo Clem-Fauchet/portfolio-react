@@ -12,10 +12,14 @@
     transform: scale(1.5);
   }
 
-  
   @media screen and (max-width: $screen-md) {
     transform: scale(1.9);
     width:98%;
+  }
+
+  @media screen and (max-width: $screen-sm) {
+    transform: scale(2.2);
+    width:100%;
   }
 
   .st6 {
@@ -84,6 +88,9 @@
     @media screen and (max-width: $screen-md) {
       transform: scale(0.30);
     }
+    @media screen and (max-width: $screen-sm) {
+      transform: scale(0.16);
+    }
   }
 
   .potionSvg {
@@ -98,6 +105,11 @@
     @media screen and (max-width: $screen-md) {
       top: 10.2%;
       left: 54%
+    }
+
+    @media screen and (max-width: $screen-sm) {
+      top: -34%;
+      left: 38%
     }
   }
 
@@ -115,6 +127,12 @@
       left: -23%;
       transform: scale(0.27);
     }
+
+    @media screen and (max-width: $screen-sm) {
+      top: -44%;
+      left: -62%;
+      transform: scale(0.15);
+    }
   }
 
   .historySvg {
@@ -131,6 +149,12 @@
       left: 13%;
       transform: scale(0.25);
     }
+
+    @media screen and (max-width: $screen-sm) {
+      top: -133%;
+      left: -9.5%;
+      transform: scale(0.14);
+    }
   }
 
   .trapSvg {
@@ -146,6 +170,12 @@
       top: 33%;
       left: 32%;
       transform: scale(0.26);
+    }
+
+    @media screen and (max-width: $screen-sm) {
+      top: -9%;
+      left: 17%;
+      transform: scale(0.13);
     }
   }
 

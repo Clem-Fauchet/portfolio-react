@@ -30,6 +30,13 @@
       height: 194px;
       margin: 26% auto;
     }
+
+    @media screen and (max-width: $screen-sm) {
+      width: 300px;
+      height: 145.6px;
+      margin: 40% auto;
+      border-radius: 35px;
+    }
   
     .cover {
       opacity: 1;
@@ -43,6 +50,7 @@
         background: t($bg-second);
        }
     }
+
   
     h1 {
       font-family: $font;
@@ -62,8 +70,13 @@
         font-size: 52px;
       }
 
-      @media screen and (max-width: $screen-lg) {
+      @media screen and (max-width: $screen-md) {
         font-size: 25px;
+      }
+
+      @media screen and (max-width: $screen-sm) {
+        font-size: 16px;
+        top: 15px;
       }
       
     }
@@ -82,9 +95,15 @@
       height: 600px;
       margin: 15% auto;
     }
+
     @media screen and (max-width: $screen-md) {
       margin: 26% auto;
       height: 360px;
+    }
+
+    @media screen and (max-width: $screen-sm) {
+      margin: 40% auto;
+      height: 230px;
     }
   
     .cover {
@@ -112,6 +131,10 @@
 
       @media screen and (max-width: $screen-md) {
         font-size: 22px;
+      }
+
+      @media screen and (max-width: $screen-sm) {
+        font-size: 17px;
       }
     }
   
@@ -143,6 +166,11 @@
         @media screen and (max-width: $screen-md) {
           font-size: 18px;
           height: 35px;
+        }
+
+        @media screen and (max-width: $screen-sm) {
+          font-size: 13px;
+          height: 25px;
         }
 
         
@@ -179,6 +207,10 @@
           @media screen and (max-width: $screen-md) {
             font-size: 18px;
           }
+ 
+        @media screen and (max-width: $screen-sm) {
+          font-size: 13px;
+        }
   
 
           @include themed() {
@@ -200,7 +232,11 @@
       @media screen and (max-width: $screen-md) {
         width: 18px;
         height: 18px;
-        right: 6%;
+      }
+
+      @media screen and (max-width: $screen-sm) {
+        width: 13px;
+        height: 13px;
       }
 
     }

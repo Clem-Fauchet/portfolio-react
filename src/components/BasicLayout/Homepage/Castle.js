@@ -30,7 +30,7 @@ function Castle() {
         onClick={() => loadContext.loadDispatch({ type: 'loadWeb' })}
         className={`historySvg ${loadContext.loadState.web ? 'active' : ''}`}
       />
-      <Trap />
+      {/* <Trap /> */}
     </div>
   )
 }
