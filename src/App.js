@@ -89,7 +89,6 @@ function App() {
 
       <LoadContext.Provider value={{ loadState: load, loadDispatch: dispatch }}>
         <PopUp />
-  
       </LoadContext.Provider>
     </div>
   )

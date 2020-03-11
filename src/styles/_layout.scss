@@ -6,6 +6,11 @@
   grid-template-rows: $nav-height 40px auto 30px $nav-height;
   grid-template-columns: 60px 0.4fr 2fr 0.4fr 60px;
 
+  @media screen and (max-width: $screen-md) {
+    grid-template-rows: $nav-height-sm 30px auto 20px $nav-height-sm;
+    grid-template-columns: 30px 0.2fr auto 0.2fr 30px;
+  }
+
   @include themed() {
     background-color: t($bg);
   }
@@ -39,6 +44,10 @@
     height: $nav-height-md;
   }
 
+  @media screen and (max-width: $screen-md) {
+    height: $nav-height-sm;
+  }
+
 
   @include themed() {
     background-color: t($bg-second);
@@ -64,6 +73,12 @@
     @media screen and (max-width: $screen-lg) {
       font-size: $size-nav-md;
     }
+
+    @media screen and (max-width: $screen-md) {
+      font-size: $size-nav-sm;
+      width: 85%;
+    }
+
 
     @include themed() {
       color: t($text);
@@ -95,6 +110,12 @@
       height: $nav-height-md;
       padding: 10px;
     }
+
+    @media screen and (max-width: $screen-md) {
+      height: $nav-height-sm;
+    }
+
+   
     
     @include themed() {
       background-color: t($bg-second-opacity);
@@ -107,6 +128,11 @@
         width: 25px;
         height: 25px;
       }
+
+      @media screen and (max-width: $screen-md) {
+        width: 12px;
+        height: 12px;
+      }
     }
 
     h3 {
@@ -117,6 +143,10 @@
 
       @media screen and (max-width: $screen-lg) {
         font-size: $size-user-md;
+      }
+
+      @media screen and (max-width: $screen-md) {
+        font-size: $size-user-sm;
       }
     }
     
@@ -135,7 +165,12 @@
     height: $nav-height-md;
     width: 165px;
   }
-  
+
+  @media screen and (max-width: $screen-md) {
+    height: $nav-height-sm;
+    width: 140px;
+  }
+
   @include themed() {
     fill: t($bg-second);
   }
@@ -152,6 +187,10 @@
     padding: 35px 15px 10px 35px;
   }
 
+  @media screen and (max-width: $screen-md) {
+    padding: 75px 15px 15px 55px;
+  }
+
   .link {
     cursor: pointer;
     height: 35px;
@@ -160,6 +199,11 @@
     @media screen and (max-width: $screen-lg) {
       height: 25px;
       width: 25px;
+    }
+
+    @media screen and (max-width: $screen-md) {
+      height: 20px;
+      width: 20px;
     }
 
     @include themed() {

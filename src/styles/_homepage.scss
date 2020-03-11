@@ -16,6 +16,12 @@
       width: 90%; 
   }
 
+  @media screen and (max-width: $screen-md) {
+    padding: 20px 10px 10px;  
+    height: 65vh;
+  }
+
+
   @include themed() {
     background-color: t($bg-second);
     border: t($nav-border);
@@ -31,6 +37,10 @@
       font-size: 43px;
    }
 
+   @media screen and (max-width: $screen-md) {
+    font-size: 2em;
+  }
+
     @include themed() {
       text-shadow: t($shadow-popup);
      }
@@ -45,6 +55,10 @@
       font-size: 27px;
       text-align: center;
    }
+
+   @media screen and (max-width: $screen-md) {
+    font-size: 1.2em;
+  }
 
     @include themed() {
       color: t($text);
@@ -62,6 +76,10 @@
       font-size: 24px;
    }
 
+   @media screen and (max-width: $screen-md) {
+    font-size: 1.1em;
+  }
+
     @include themed() {
       color: t($text);
      }
@@ -77,6 +95,11 @@
       font-size: 23px;
       text-align: center;
    }
+
+   @media screen and (max-width: $screen-md) {
+    font-size: 1.2em;
+  }
+
   }
 
 
@@ -87,6 +110,13 @@
     top: 2%;
     
     cursor: pointer;
+
+    
+    @media screen and (max-width: $screen-md) {
+      width: 22px;
+      height: 22px;
+    }
+
 
     .circle {
       stroke-width: 8;

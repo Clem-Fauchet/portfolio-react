@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Circle = () => (
-  <svg width='300' height='300'>
+  <svg class='circleSvg' width='300' height='300'>
     <circle
       cx='150'
       cy='150'

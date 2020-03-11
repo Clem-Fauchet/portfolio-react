@@ -12,6 +12,12 @@
     transform: scale(1.5);
   }
 
+  
+  @media screen and (max-width: $screen-md) {
+    transform: scale(1.9);
+    width:98%;
+  }
+
   .st6 {
     @include themed() {
       // stroke: t($text); //best with white line
@@ -74,6 +80,10 @@
     @media screen and (max-width: $screen-lg) {
       transform: scale(0.55);
     }
+
+    @media screen and (max-width: $screen-md) {
+      transform: scale(0.30);
+    }
   }
 
   .potionSvg {
@@ -83,6 +93,11 @@
     @media screen and (max-width: $screen-lg) {
       top: 40.2%;
       left: 66%
+    }
+
+    @media screen and (max-width: $screen-md) {
+      top: 10.2%;
+      left: 54%
     }
   }
 
@@ -94,6 +109,12 @@
       top: 37.2%;
       left: 5.2%
     }
+
+    @media screen and (max-width: $screen-md) {
+      top: 2.2%;
+      left: -23%;
+      transform: scale(0.27);
+    }
   }
 
   .historySvg {
@@ -103,6 +124,12 @@
     @media screen and (max-width: $screen-lg) {
       top: -16%;
       left: 30%
+    }
+
+    @media screen and (max-width: $screen-md) {
+      top: -67%;
+      left: 13%;
+      transform: scale(0.25);
     }
   }
 
@@ -114,11 +141,21 @@
       top: 63.5%;
       left: 43%
     }
+
+    @media screen and (max-width: $screen-md) {
+      top: 33%;
+      left: 32%;
+      transform: scale(0.26);
+    }
   }
 
   .potionItem, .defenseItem, .historyItem, .trapItem {
     cursor: pointer;
     opacity: 0;
+
+    @media screen and (max-width: $screen-md) {
+      cursor: default;
+    }
    }
   
   }

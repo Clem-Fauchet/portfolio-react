@@ -10,6 +10,11 @@
     height: 52vh;
   }
 
+  @media screen and (max-width: $screen-md) {
+    height: 35vh;
+    grid-column: 5/6;
+  }
+
   @include themed() {
     stroke: t($color-wand);
     fill: t($color-wand);
@@ -25,19 +30,25 @@
   height: 35vh;
   text-align: center;
 
-  @include themed() {
-    background: t($bg-third);
-    box-shadow: t($shadow-book);
-  }
-
   display: flex;
   justify-content: space-between;
   padding: 15px;
   margin-bottom: 80px;
 
+  
   @media screen and (max-width: $screen-lg) {
     padding: 10px;
     height: 42vh;
+  }
+
+  @media screen and (max-width: $screen-md) {
+    width:92%;
+    margin-bottom: 60px;
+  }
+
+  @include themed() {
+    background: t($bg-third);
+    box-shadow: t($shadow-book);
   }
 
   h3 {
@@ -50,7 +61,11 @@
     @media screen and (max-width: $screen-lg) {
       font-size: $size-web-title-md;
     }
-  
+
+    @media screen and (max-width: $screen-md) {
+      font-size: $size-web-title-sm;
+    }
+
     @include themed() {
       color: t($text);
     }
@@ -64,11 +79,9 @@
     align-items: center;
   }
 
-
   .first-col {
     border-right: 2px solid $common-color;
    
-  
     p {
       font-family: $font;
       font-weight: map-get($font-weight, 'medium');
@@ -79,6 +92,11 @@
       @media screen and (max-width: $screen-lg) {
         font-size: $size-text-md;
         margin-bottom: 4vh;
+      }
+
+      @media screen and (max-width: $screen-md) {
+        font-size: $size-text-sm;
+        width: 85%;
       }
       
       @include themed() {
@@ -93,6 +111,10 @@
       list-style: none;
       text-align: left;
 
+      @media screen and (max-width: $screen-md) {
+        width: 85%;
+      }
+
       li {
         font-family: $font;
         font-weight: map-get($font-weight, 'medium');
@@ -102,6 +124,10 @@
         
       @media screen and (max-width: $screen-lg) {
         font-size: $size-text-md;
+      }
+
+      @media screen and (max-width: $screen-md) {
+        font-size: $size-text-sm;
       }
 
         @include themed() {
@@ -132,6 +158,12 @@
         font-size: $size-button-md;
       }
 
+      @media screen and (max-width: $screen-md) {
+        width: 120px;
+        height: 25px;
+        font-size: $size-button-sm;
+      }
+
       @include themed() {
         background-color: t($bg);
       }
@@ -156,10 +188,10 @@
   align-self: center;
   overflow: hidden;
 
-  @media screen and (max-width: $screen-lg) {
-    height: 50vh;
+  @media screen and (max-width: $screen-md) {
+    width: 90%;
+    height: 30vh;
   }
-
 
   .progressBar {
     display: flex;
@@ -172,11 +204,20 @@
     @media screen and (max-width: $screen-lg) {
       width: 8%;
     }
+
+    @media screen and (max-width: $screen-md) {
+      width: 11%;
+    }
+    
   
         
     .name {
       width: 100%;
       margin-bottom: 20px;
+
+      @media screen and (max-width: $screen-md) {
+        display: none;
+      }
   
       h3 {
         font-family: $font;
@@ -208,6 +249,11 @@
       @media screen and (max-width: $screen-lg) {
         width: 45px;
         height: 45px;
+      }
+
+      @media screen and (max-width: $screen-md) {
+        width: 30px;
+        height: 30px;
       }
       
       span {

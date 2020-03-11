@@ -12,6 +12,12 @@
     height: $nav-height-md;
   }
 
+  @media screen and (max-width: $screen-md) {
+    height: $nav-height-sm;
+    top: $nav-height-sm - 10px;
+    right: 0%;
+  }
+
   .icon {
     position: fixed;
     z-index:  9999999;
@@ -23,6 +29,11 @@
     @media screen and (max-width: $screen-lg) {
       width: 25px;
       height: 25px;
+    }
+
+    @media screen and (max-width: $screen-md) {
+      width: 20px;
+      height: 20px;
     }
   
   @include themed() {
