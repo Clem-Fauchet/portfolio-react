@@ -56,8 +56,8 @@ export const projects = [
     id: 5,
     image: '../../../assets/project/nerdy.png',
     title: 'Bootcamp validation website',
-    subTitle: 'Fake event about outside movies projections',
-    use: 'Use of everything I have learned.',
+    subTitle: 'Fake event about outside movies projections.',
+    use: 'Used everything I have learned.',
     description:
       'Creating everything from scratch. Layouts with HTML/CSS and animations with Javascript. JS plugin for carousel animation. Flexbox and Grid to make it responsive. Complete form with database. Upload on OVH.',
     queries: 'Pc first, media queries tablet & mobile.',

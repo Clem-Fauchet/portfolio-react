@@ -14,7 +14,7 @@ function InfoBox({ closeBox }) {
       <p>
         If you're here, I'm guessing you want to know more about me. As you can
         see I love to create stuff and play with animations. <br /> The best way
-        to navigate through the site is by the castle However feel free to use
+        to navigate through the site is by the castle. However feel free to use
         the shortcuts up there as long as you enjoy your visit.
       </p>
       <h4>

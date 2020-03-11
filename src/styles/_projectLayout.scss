@@ -105,6 +105,12 @@
           background-color: t($bg-second);  
         }
 
+        &:hover {
+          @include themed() {
+            background-color: t($bg);  
+          }
+        }
+
         a, a:focus {
           outline: none;
           text-decoration: none;

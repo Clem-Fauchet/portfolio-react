@@ -6,6 +6,7 @@
   width:90%;
   transform: scale(1.3);
   position: relative;
+  z-index:9999;
 
   .st6 {
     @include themed() {
@@ -64,6 +65,7 @@
   .potionSvg, .defenseSvg, .historySvg, .trapSvg {
     position: absolute;
     transform: scale(0.88);
+    z-index:99999;
   }
 
   .potionSvg {
