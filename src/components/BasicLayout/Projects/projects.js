@@ -1,20 +1,20 @@
 export const projects = [
   {
     id: 1,
-    image: '../../../assets/project/quiz.png',
+    image: '../assets/project/quiz.png',
     title: 'Quiz Harry Potter Houses',
     subTitle: 'Multi options quiz - Which houses do you belong to?',
     use: 'Use of React Hooks - useState/useEffect.',
     description:
       'Relies on user answers selection by updating state and five different results for each houses. Previous button allows user to take back answer and modify count correctly with the new answer.',
-    queries: 'Pc first, media queries for mobile.',
+    queries: '../Pc first, media queries for mobile.',
     tools: 'Webpack, React.JS, Sass, Git, Photoshop',
     link: 'http://hp-quiz-houses-app.surge.sh/',
   },
 
   {
     id: 2,
-    image: '../../../assets/project/memory.png',
+    image: '../assets/project/memory.png',
     title: 'Game Harry Potter',
     subTitle: 'Memory cards - Find all the pairs.',
     use: 'Use of React Hooks - useState/useEffect.',
@@ -27,7 +27,7 @@ export const projects = [
 
   {
     id: 3,
-    image: '../../../assets/project/portfolio.png',
+    image: '../assets/project/portfolio.png',
     title: 'First Portfolio',
     subTitle: 'Portfolio to test new skills.',
     use: 'First use of Git and Sass.',
@@ -41,7 +41,7 @@ export const projects = [
 
   {
     id: 4,
-    image: '../../../assets/project/compost.png',
+    image: '../assets/project/compost.png',
     title: "Website Compost'Solidaire",
     subTitle: 'Green association to reduce carbon oxygen.',
     use: 'Use of Wordpress and plugins.',
@@ -54,7 +54,7 @@ export const projects = [
 
   {
     id: 5,
-    image: '../../../assets/project/nerdy.png',
+    image: '../assets/project/nerdy.png',
     title: 'Bootcamp validation website',
     subTitle: 'Fake event about outside movies projections.',
     use: 'Used everything I have learned.',
