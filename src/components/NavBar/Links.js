@@ -7,7 +7,7 @@ function Links() {
 
   return (
     <div className='link'>
-      <Link to='/'>
+      <Link to='portfolio-react/'>
         <li
           onClick={() => loadContext.loadDispatch({ type: 'loadHogwarts' })}
           className={`${loadContext.loadState.hogwarts ? 'active' : ''}`}
@@ -15,7 +15,7 @@ function Links() {
           Hogwarts
         </li>
       </Link>
-      <Link to='/projects'>
+      <Link to='portfolio-react/projects'>
         <li
           onClick={() => loadContext.loadDispatch({ type: 'loadProjects' })}
           className={`${loadContext.loadState.projects ? 'active' : ''}`}
@@ -23,7 +23,7 @@ function Links() {
           Projects
         </li>
       </Link>
-      <Link to='./web-dev'>
+      <Link to='portfolio-react/web-dev'>
         <li
           onClick={() => loadContext.loadDispatch({ type: 'loadWeb' })}
           className={`${loadContext.loadState.web ? 'active' : ''}`}
@@ -31,7 +31,7 @@ function Links() {
           Web Dev
         </li>
       </Link>
-      <Link to='./previous-life'>
+      <Link to='portfolio-react/previous-life'>
         <li
           onClick={() => loadContext.loadDispatch({ type: 'loadPrevious' })}
           className={`${loadContext.loadState.previous ? 'active' : ''}`}
