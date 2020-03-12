@@ -1,0 +1,95 @@
+ .ReactModal__Overlay.ReactModal__Overlay--after-open {
+    background-color: $dark-color-secondary !important;
+ 
+  }
+  
+  .ReactModal__Content.ReactModal__Content--after-open {
+    background-color: $dark-color-third !important;
+    text-align: center;
+    border: none !important;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    color: $common-color;
+    grid-template-areas:
+    ". . ."
+    ". exp ."
+    '. . .';
+
+    .explanation {
+      grid-area: exp;
+      width: 80%;
+      height: 80%;
+      background-color: $dark-color-secondary-opacity !important;
+      border-radius: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      h2 {
+        width: 80%;
+        color: ghostwhite;
+        font-family: $font-admin;
+        font-weight: map-get($font-weight, 'medium');
+        font-size: $size-web-title;
+
+        @media screen and (max-width: $screen-lg) {
+          font-size: $size-web-title-md;
+         }
+
+        @media screen and (max-width: $screen-md) {
+          font-size: $size-web-title-sm;
+        }
+  
+        @media screen and (max-width: $screen-sm) {
+          font-size: $size-web-title-xs;
+        }
+      }
+    }
+
+    button {
+      outline: none;
+      border: none;
+      width: 180px;
+      border-radius: 35px;
+      height: 35px;
+      background-color: $dark-color-secondary;
+      color: $common-color;
+      font-family: $font-admin;
+      font-weight: map-get($font-weight, 'medium');
+      font-size: $size-button;
+      cursor: pointer;
+
+      &:hover {
+        background-color: ghostwhite;
+      }
+
+      @media screen and (max-width: $screen-lg) {
+        font-size: $size-button-md;
+        width: 160px;
+        border-radius: 30px;
+        height: 30px;
+       }
+
+      @media screen and (max-width: $screen-md) {
+        font-size: $size-button-sm;
+        width: 120px;
+        border-radius: 25px;
+        height: 25px;
+      }
+
+      @media screen and (max-width: $screen-sm) {
+        font-size: $size-button-xs;
+        width: 90px;
+        border-radius: 15px;
+        height: 18px;
+      }
+    }
+
+
+ }
+
+
