@@ -115,7 +115,7 @@ $dark-shadow-book:
   0 -20px 1px -9px rgba(30,30,29,.31);
 
 
-//text (for now changing in em)
+//text (for now changing)
 $size-nav: 23px;
 $size-word: 21px;
 $size-user: 13px;
@@ -134,7 +134,7 @@ $size-button: 15px;
 
 //breakpoints
 $screen-xs: 480px; ///SMALL SMARTPHONE 320px 
-$screen-sm: 768px; ///SMARTPHONE PORTRAIT LANDSCAPE 481px 768px
+$screen-sm: 767px; ///SMARTPHONE PORTRAIT LANDSCAPE 481px 768px
 $screen-md: 991px; //TABLET 769px 991px
 $screen-lg: 1200px; //SMALL SCREEN PC 992px 1200px
 
@@ -157,20 +157,20 @@ $screen-lg: 1200px; //SMALL SCREEN PC 992px 1200px
 
   
 //size media queries BETWEEN SM MD TABLET
-$size-nav-sm: 16px;
-$size-word-sm: 16px;
-$size-user-sm: 9px;
+$size-nav-sm: 18px;
+$size-word-sm: 17px;
+$size-user-sm: 11px;
 
 
-$size-web-title-sm: 17px;
-$size-recipe-title-sm: 15px;
-$size-bubble-title-sm: 14px;
+$size-web-title-sm: 18px;
+$size-recipe-title-sm: 17px;
+$size-bubble-title-sm: 16px;
 
-$size-text-sm: 12px;
+$size-text-sm: 15px;
 
-$size-bubble-text-sm: 11px;
+$size-bubble-text-sm: 12px;
 
-$size-bubble-button-sm: 12.5px;
+$size-bubble-button-sm: 13.5px;
 $size-button-sm: 10px;
 
 //size media queries BETWEEN PHONE XL SM

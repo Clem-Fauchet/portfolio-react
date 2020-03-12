@@ -35,6 +35,16 @@
 
 }
 
+.first-bloc {
+  @media screen and (max-width: $screen-sm) {
+    height: 60vh;
+  }
+
+  @media screen and (max-width: 320px) {
+    height: 65vh;
+  }
+}
+
 
   .recipe {
     width: 40%;
@@ -162,4 +172,8 @@
      @media screen and (max-width: $screen-xs) {
       height: 55vh;
      }
+
+     @media screen and (max-width: 320px) {
+      height: 70vh;
+    }
   }
