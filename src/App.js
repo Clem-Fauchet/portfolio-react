@@ -4,6 +4,7 @@ import './styles/App.scss'
 import { FaSun } from 'react-icons/fa'
 import { IoIosMoon } from 'react-icons/io'
 import PopUp from './components/PopUp/PopUp'
+import HogwartsLayout from './components/BasicLayout/Homepage/HogwartsLayout'
 
 export const LoadContext = React.createContext()
 

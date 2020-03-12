@@ -41,11 +41,16 @@
       height: 20px;
     }
 
-    @media screen and (max-width: $screen-md) {
+    @media screen and (max-width: $screen-sm) {
       width: 17px;
       height: 17px;
     }
-  
+
+    @media screen and (max-width: $screen-xs) {
+      width: 14px;
+      height: 14px;
+    }
+
   @include themed() {
     fill: t($theme);
   }

@@ -25,6 +25,7 @@
     width: 100%;
     padding: 5px;
     margin-bottom: 8px;
+    height: 68vh;
   }
 
   display: flex;
@@ -84,7 +85,11 @@
 
          @media screen and (max-width: $screen-sm) {
           font-size: $size-text-xs;
-          height: 26vh;
+          height: 24vh;
+         }
+ 
+         @media screen and (max-width: $screen-xs) {
+          height: 20vh;
          }
 
         h3 {
@@ -152,5 +157,9 @@
       margin-top: -30px;
       margin-bottom: 0;
       align-items: center;
+     }
+
+     @media screen and (max-width: $screen-xs) {
+      height: 55vh;
      }
   }

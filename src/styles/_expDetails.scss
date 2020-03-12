@@ -196,6 +196,7 @@
      @media screen and (max-width: $screen-xs) {
       font-size: 0.50em;
       padding: 10px 5px;
+      height: 82%;
      }
 
       @include themed() {

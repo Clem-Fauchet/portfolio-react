@@ -133,16 +133,16 @@ $size-button: 15px;
 
 
 //breakpoints
-$screen-xs: 480px;
-$screen-sm: 768px;
-$screen-md: 992px;
-$screen-lg: 1200px;
+$screen-xs: 480px; ///SMALL SMARTPHONE 320px 
+$screen-sm: 768px; ///SMARTPHONE PORTRAIT LANDSCAPE 481px 768px
+$screen-md: 991px; //TABLET 769px 991px
+$screen-lg: 1200px; //SMALL SCREEN PC 992px 1200px
 
 //size media queries BETWEEN MD LG
   $size-nav-md: 21px;
   $size-word-md: 19px;
   $size-user-md: 12px;
-
+  
 
   $size-web-title-md: 20px;
   $size-recipe-title-md: 16px;

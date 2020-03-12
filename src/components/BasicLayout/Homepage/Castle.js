@@ -14,23 +14,25 @@ function Castle() {
     <div className='castle'>
       <Hogwarts />
 
-      <Potion
-        onClick={() => loadContext.loadDispatch({ type: 'loadPrevious' })}
-        className={`potionSvg ${
-          loadContext.loadState.previous ? 'active' : ''
-        }`}
-      />
-      <Defense
-        onClick={() => loadContext.loadDispatch({ type: 'loadProjects' })}
-        className={`defenseSvg ${
-          loadContext.loadState.projects ? 'active' : ''
-        }`}
-      />
-      <History
-        onClick={() => loadContext.loadDispatch({ type: 'loadWeb' })}
-        className={`historySvg ${loadContext.loadState.web ? 'active' : ''}`}
-      />
-      {/* <Trap /> */}
+      <div className='castle-items'>
+        <Potion
+          onClick={() => loadContext.loadDispatch({ type: 'loadPrevious' })}
+          className={`potionSvg ${
+            loadContext.loadState.previous ? 'active' : ''
+          }`}
+        />
+        <Defense
+          onClick={() => loadContext.loadDispatch({ type: 'loadProjects' })}
+          className={`defenseSvg ${
+            loadContext.loadState.projects ? 'active' : ''
+          }`}
+        />
+        <History
+          onClick={() => loadContext.loadDispatch({ type: 'loadWeb' })}
+          className={`historySvg ${loadContext.loadState.web ? 'active' : ''}`}
+        />
+        <Trap />
+      </div>
     </div>
   )
 }

@@ -84,6 +84,11 @@
         padding: 8px 0px;
       }
 
+      @media screen and (max-width: $screen-xs) {
+        font-size: 0.55em;
+        height: 50px;
+      }
+
       @include themed() {
        color: t($text);
       }

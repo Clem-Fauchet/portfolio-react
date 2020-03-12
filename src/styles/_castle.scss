@@ -76,118 +76,146 @@
     }
   }
 
-  .potionSvg, .defenseSvg, .historySvg, .trapSvg {
+  .castle-items {
     position: absolute;
-    transform: scale(0.88);
-    z-index:99999;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    top: 0;
+    left: 0;
 
-    @media screen and (max-width: $screen-lg) {
-      transform: scale(0.55);
+    .potionSvg, .defenseSvg, .historySvg, .trapSvg {
+      position: absolute;
+      transform: scale(0.88);
+      z-index:99999;
+
+      
+      @media screen and (max-width: $screen-lg) {
+        transform: scale(0.63);
+      }
+
+      @media screen and (max-width: $screen-md) {
+        transform: scale(0.50);
+      }
+   
+      @media screen and (max-width: $screen-sm) {
+        transform: scale(0.30);
+      }
+
+      @media screen and (max-width: $screen-xs) {
+        transform: scale(0.18);
+      }
     }
-
-    @media screen and (max-width: $screen-md) {
-      transform: scale(0.30);
-    }
-    @media screen and (max-width: $screen-sm) {
-      transform: scale(0.16);
-    }
-  }
-
-  .potionSvg {
-    top: 51%;
-    left: 69.8%;
-
-    @media screen and (max-width: $screen-lg) {
-      top: 40.2%;
-      left: 66%
-    }
-
-    @media screen and (max-width: $screen-md) {
-      top: 10.2%;
-      left: 54%
-    }
-
-    @media screen and (max-width: $screen-sm) {
-      top: -34%;
-      left: 38%
-    }
-  }
-
-  .defenseSvg {
-    top: 48.8%;
-    left: 13.8%;
-
-    @media screen and (max-width: $screen-lg) {
-      top: 37.2%;
-      left: 5.2%
-    }
-
-    @media screen and (max-width: $screen-md) {
-      top: 2.2%;
-      left: -23%;
-      transform: scale(0.27);
-    }
-
-    @media screen and (max-width: $screen-sm) {
-      top: -44%;
-      left: -62%;
-      transform: scale(0.15);
-    }
-  }
-
-  .historySvg {
-    top: 0.4%;
-    left: 34.7%;
-
-    @media screen and (max-width: $screen-lg) {
-      top: -16%;
-      left: 30%
-    }
-
-    @media screen and (max-width: $screen-md) {
-      top: -67%;
-      left: 13%;
-      transform: scale(0.25);
-    }
-
-    @media screen and (max-width: $screen-sm) {
-      top: -133%;
-      left: -9.5%;
-      transform: scale(0.14);
-    }
-  }
-
-  .trapSvg {
-    top: 72.8%;
-    left: 46.6%;
-
-    @media screen and (max-width: $screen-lg) {
-      top: 63.5%;
-      left: 43%
-    }
-
-    @media screen and (max-width: $screen-md) {
-      top: 33%;
-      left: 32%;
-      transform: scale(0.26);
-    }
-
-    @media screen and (max-width: $screen-sm) {
-      top: -9%;
-      left: 17%;
-      transform: scale(0.13);
-    }
-  }
-
-  .potionItem, .defenseItem, .historyItem, .trapItem {
-    cursor: pointer;
-    opacity: 0;
-
-    @media screen and (max-width: $screen-md) {
-      cursor: default;
-    }
-   }
   
+    .potionSvg {
+      top: 51%;
+      left: 69.8%;
+  
+      @media screen and (max-width: $screen-lg) {
+        top: 37%;
+        left: 65%;
+      }
+
+      @media screen and (max-width: $screen-md) {
+        top: 22%;
+        left: 61%;
+      }
+
+      @media screen and (max-width: $screen-sm) {
+        top: 2%;
+        left: 52%;
+      }
+
+      @media screen and (max-width: $screen-xs) {
+        top: -35%;
+        left: 38%;
+      }
+    }
+  
+    .defenseSvg {
+      top: 48.8%;
+      left: 13.8%;
+
+      @media screen and (max-width: $screen-lg) {
+        top: 34%;
+        left: 1%;
+      }
+
+      @media screen and (max-width: $screen-md) {
+        top: 26%;
+        left: -7%;
+      }
+
+      @media screen and (max-width: $screen-sm) {
+        top: -3%;
+        left: -29%;
+      }
+
+      @media screen and (max-width: $screen-xs) {
+        top: -43%;
+        left: -62%;
+      }
+    }
+  
+    .historySvg {
+      top: 0.4%;
+      left: 34.7%;
+
+      @media screen and (max-width: $screen-lg) {
+        top: -29%;
+        left: 27%;
+      }
+  
+      @media screen and (max-width: $screen-md) {
+        top: -45%;
+        left: 23%;
+      }
+
+      @media screen and (max-width: $screen-sm) {
+        top: -85%;
+        left: 10%;
+      }
+
+      @media screen and (max-width: $screen-xs) {
+        top: -141%;
+        left: -9%;
+      }
+    }
+  
+    .trapSvg {
+      top: 72.8%;
+      left: 46.6%;
+
+      @media screen and (max-width: $screen-lg) {
+        top: 58%;
+        left: 41%;
+      }
+
+      @media screen and (max-width: $screen-md) {
+        top: 48%;
+        left: 38%;
+      }
+
+      @media screen and (max-width: $screen-sm) {
+        top: 23%;
+        left: 29%;
+      }
+
+      @media screen and (max-width: $screen-xs) {
+        top: -11%;
+        left: 16%;
+      }
+    }
+  
+    .potionItem, .defenseItem, .historyItem, .trapItem {
+      cursor: pointer;
+      opacity: 0;
+  
+      @media screen and (max-width: $screen-md) {
+        cursor: default;
+      }
+     }
+    }
   }
 
  

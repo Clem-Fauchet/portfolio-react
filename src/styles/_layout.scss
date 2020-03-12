@@ -52,7 +52,6 @@
     height: $nav-height-xs;
   }
 
-
   @include themed() {
     background-color: t($bg-second);
     border: t($nav-border);
@@ -86,6 +85,10 @@
     @media screen and (max-width: $screen-sm) {
       font-size: $size-nav-xs;
       width: 95%;
+    }
+
+    @media screen and (max-width: $screen-xs) {
+      font-size: 0.55em;
     }
 
 
@@ -149,6 +152,11 @@
         width: 8px;
         height: 8px;
       }
+
+      @media screen and (max-width: $screen-xs) {
+        width: 6.5px;
+        height: 6.5px;
+      }
     }
 
     h3 {
@@ -167,6 +175,10 @@
 
       @media screen and (max-width: $screen-sm) {
         font-size: $size-user-xs;
+      }
+
+      @media screen and (max-width: $screen-xs) {
+        font-size: 0.3em;
       }
     }
     
