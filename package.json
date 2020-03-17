@@ -1,12 +1,13 @@
 {
   "name": "portfoliohp",
+  "homepage": "https://clem-fauchet.github.io/portfolio-react/",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://clem-fauchet.github.io/portfolio-react/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "chromedriver": "^80.0.1",
     "node-sass": "^4.13.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
@@ -22,8 +23,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "npm run build&&gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
