@@ -1,7 +1,7 @@
 export const projects = [
 	{
 		id: 1,
-		image: '/static/media/quiz.png',
+		image: '/portfolio-react/public/assets/project/quiz.png',
 		title: 'Quiz Harry Potter Houses',
 		subTitle: 'Multi options quiz - Which houses do you belong to?',
 		use: 'Use of React Hooks - useState/useEffect.',
@@ -14,7 +14,7 @@ export const projects = [
 
 	{
 		id: 2,
-		image: '/static/media/memory.png',
+		image: '/portfolio-react/public/assets/project/memory.png',
 		title: 'Game Harry Potter',
 		subTitle: 'Memory cards - Find all the pairs.',
 		use: 'Use of React Hooks - useState/useEffect.',
@@ -27,7 +27,7 @@ export const projects = [
 
 	{
 		id: 3,
-		image: '/static/media/portfolio.png',
+		image: '/portfolio-react/public/assets/project/portfolio.png',
 		title: 'First Portfolio',
 		subTitle: 'Portfolio to test new skills.',
 		use: 'First use of Git and Sass.',
@@ -41,7 +41,7 @@ export const projects = [
 
 	{
 		id: 4,
-		image: '/static/media/compost.png',
+		image: '/portfolio-react/public/assets/project/compost.png',
 		title: "Website Compost'Solidaire",
 		subTitle: 'Green association to reduce carbon oxygen.',
 		use: 'Use of Wordpress and plugins.',
@@ -54,7 +54,7 @@ export const projects = [
 
 	{
 		id: 5,
-		image: '/static/media/nerdy.png',
+		image: '/portfolio-react/public/assets/project/nerdy.png',
 		title: 'Bootcamp validation website',
 		subTitle: 'Fake event about outside movies projections.',
 		use: 'Used everything I have learned.',
