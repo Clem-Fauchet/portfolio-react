@@ -1,6 +1,20 @@
 export const projects = [
 	{
 		id: 1,
+		image: '/portfolio-react/public/assets/project/opn.png',
+		title: 'Maquette Integration',
+		subTitle: 'Basic integration for pc and mobile',
+		use: 'Basics recap, structuring code for review',
+
+		description:
+			'Figma design & prototype. Integration HTML/CSS. Alternate between Flexbox and Grid. Full CSS and svg animations. Events with Vanilla JS like sticky bars, mobile menu on the left, carousel animation, cloning... ',
+		queries: 'Pc first, media queries mobile.',
+		tools: 'HTML, CSS, Javascript',
+		link: 'http://homepage-opn-complete.surge.sh/',
+	},
+
+	{
+		id: 2,
 		image: '/portfolio-react/public/assets/project/quiz.png',
 		title: 'Quiz Harry Potter Houses',
 		subTitle: 'Multi options quiz - Which houses do you belong to?',
@@ -13,7 +27,7 @@ export const projects = [
 	},
 
 	{
-		id: 2,
+		id: 3,
 		image: '/portfolio-react/public/assets/project/memory.png',
 		title: 'Game Harry Potter',
 		subTitle: 'Memory cards - Find all the pairs.',
@@ -26,7 +40,7 @@ export const projects = [
 	},
 
 	{
-		id: 3,
+		id: 4,
 		image: '/portfolio-react/public/assets/project/portfolio.png',
 		title: 'First Portfolio',
 		subTitle: 'Portfolio to test new skills.',
@@ -40,7 +54,7 @@ export const projects = [
 	},
 
 	{
-		id: 4,
+		id: 5,
 		image: '/portfolio-react/public/assets/project/compost.png',
 		title: "Website Compost'Solidaire",
 		subTitle: 'Green association to reduce carbon oxygen.',
@@ -53,7 +67,7 @@ export const projects = [
 	},
 
 	{
-		id: 5,
+		id: 6,
 		image: '/portfolio-react/public/assets/project/nerdy.png',
 		title: 'Bootcamp validation website',
 		subTitle: 'Fake event about outside movies projections.',

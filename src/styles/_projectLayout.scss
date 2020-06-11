@@ -52,7 +52,8 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    clip-path: polygon(50% 0%, 100% 38%, 82% 98%, 18% 98%, 0% 38%);
+    -webkit-clip-path: polygon(50% 0%, 100% 38%, 82% 98%, 18% 98%, 0% 38%);
+            clip-path: polygon(50% 0%, 100% 38%, 82% 98%, 18% 98%, 0% 38%);
     transform: scale(0.80);
     opacity: .9;
     background-origin: border-box;
@@ -81,10 +82,14 @@
     }
 
     &:hover {
-      transform: scale(0.80) rotateY(360deg);
+      transform: scale(0.80);
       transition: transform .8s ease;
       cursor: pointer;
-    }
+      -webkit-transform: scale(0.80);
+      -moz-transform: scale(0.80);
+      -ms-transform: scale(0.80);
+      -o-transform: scale(0.80);
+}
 
     &:before {
       position: absolute;
@@ -92,7 +97,8 @@
       top: -$b; right: -$b; bottom: -$b; left: -$b;
       border: inherit; 
       background-clip: border-box;
-      filter: blur(10px);
+      -webkit-filter: blur(10px);
+              filter: blur(10px);
       content: '';
      
     }
