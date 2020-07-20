@@ -22,9 +22,9 @@ export const competence = [
 
 	{
 		id: 4,
-		tool: 'Bootstrap',
-		icon: '/assets/logoSkills/bootstrap.svg',
-		done: 58,
+		tool: 'Material UI',
+		icon: '/assets/logoSkills/materialui.svg',
+		done: 63,
 	},
 
 	{

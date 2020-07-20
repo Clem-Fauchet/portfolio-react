@@ -1,6 +1,21 @@
 export const projects = [
 	{
 		id: 1,
+		image: '/assets/project/socialApp.png',
+		title: 'Social Media App',
+		subTitle: 'Social App with React & Firebase',
+		use:
+			'Complete App using Firebase on the back end and React/Redux/Mui on the front end',
+
+		description:
+			'Build of back end functions for firebase in a different folder (server side) and test with PostMan. Build of the front end app (client side)  with React and Material Ui components. Use of Redux Store and React Hooks to manage states and actions. ',
+		queries: 'Pc first, responsive design mobile',
+		tools: 'React, Redux, Material UI, Firebase, Postman, Sass, Git ',
+		link: 'https://social-app-d3519.web.app/',
+	},
+
+	{
+		id: 2,
 		image: '/assets/project/opn.png',
 		title: 'Maquette Integration',
 		subTitle: 'Basic integration for pc and mobile',
@@ -14,7 +29,7 @@ export const projects = [
 	},
 
 	{
-		id: 2,
+		id: 3,
 		image: '/assets/project/quiz.png',
 		title: 'Quiz Harry Potter Houses',
 		subTitle: 'Multi options quiz - Which houses do you belong to?',
@@ -27,7 +42,7 @@ export const projects = [
 	},
 
 	{
-		id: 3,
+		id: 4,
 		image: '/assets/project/memory.png',
 		title: 'Game Harry Potter',
 		subTitle: 'Memory cards - Find all the pairs.',
@@ -40,7 +55,7 @@ export const projects = [
 	},
 
 	{
-		id: 4,
+		id: 5,
 		image: '/assets/project/portfolio.png',
 		title: 'First Portfolio',
 		subTitle: 'Portfolio to test new skills.',
@@ -54,7 +69,7 @@ export const projects = [
 	},
 
 	{
-		id: 5,
+		id: 6,
 		image: '/assets/project/compost.png',
 		title: "Website Compost'Solidaire",
 		subTitle: 'Green association to reduce carbon oxygen.',
@@ -67,7 +82,7 @@ export const projects = [
 	},
 
 	{
-		id: 6,
+		id: 7,
 		image: '/assets/project/nerdy.png',
 		title: 'Bootcamp validation website',
 		subTitle: 'Fake event about outside movies projections.',
